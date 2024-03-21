@@ -1,6 +1,6 @@
 Main{
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     box-sizing: border-box;
     margin-top: 20px;
     display: flex;
@@ -35,14 +35,19 @@ Section{
 }
 /* -------------------------------------------- */
 aside{
-    /* width: calc(100% - 70%); */
     width: 30%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: right;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
 }
 #login_box{
-    border: 3px solid blue;
+    border: 3px solid pink;
+    border-radius: 10px;
     box-sizing: border-box;
+    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -53,17 +58,43 @@ aside{
     flex-direction: row;
     justify-content: center;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 #welcome_booknawa{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     height: 2em;
     line-height: 2em;
+    font-weight: 700;
 }
 #join_booknawa a p{
-    margin: 0px 10px
+    margin: 0px 10px;
+    /* font-size: 14px; */
+    color: gray;
 }
 #login_box button{
-    height: 5em;
+    height: 3em;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+#login_box button span{font-size: 16px; font-weight: 700;}
+#recent_view{
+    width: 100%;
+    background-color: pink;
+    height: 10em;
+}
+#my_benefits{
+    width: 100%;
+    background-color: rgb(200, 255, 211);
+    height: 7em;
+}
+#my_save{
+    width: 100%;
+    background-color: rgb(200, 249, 255);
+    height: 7em;
 }

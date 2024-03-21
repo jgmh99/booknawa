@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./CSS/common.css">
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/index-main.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
 </head>
 <body>
     <Header>
         <div id="heder_Top">
-            <img src="./IMG/logo.png" alt="책나와 로고">
+            <img src="./IMG/Booknawa.png" alt="책나와 로고">
             <nav>
                 <ul>
                     <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="장바구니"></a></li>
@@ -22,7 +23,7 @@
         <div id="heder_Bot">
             <div id="search_bar">
                 <input type="text" id="searchInput" placeholder="검색할 책을 입력해주세요!">
-                <button id="searchButton"><img src="./IMG/searchbtn.png" alt=""></button>
+                <button id="searchButton" onclick=searchBooks()><img src="./IMG/searchbtn.png" alt=""></button>
             </div>
             <nav>
                 <ul>
@@ -41,26 +42,27 @@
                 <p>광고배너</p>
             </div>
             <div id="bm_suggestion">
-                북나와 매니저 추천!
+                오늘의 선택
             </div>
             <div id="bm_suggestion">
                 북나와 매니저 추천!
             </div>
             <div id="bm_suggestion">
-                북나와 매니저 추천!
+                New!
+            </div>
+            <div id="ad"></div>
+            <div id="bm_suggestion">
+                Best & 스테디
             </div>
             <div id="bm_suggestion">
                 북나와 매니저 추천!
             </div>
-            <div id="bm_suggestion">
-                북나와 매니저 추천!
-            </div>
-            
+
         </Section>
         <aside>
             <div id="login_box">
                 <p id="welcome_booknawa">북나와를 더 편리하게 이용하세요</p>
-                <button>BookNawa로그인</button>   
+                <button onclick="login()"><span>Booknawa</span>로그인</button>
                 <div id="join_booknawa">
                     <a href="#"><p>아이디 찾기</p></a>
                     <p> | </p>
@@ -69,14 +71,33 @@
                     <a href="#"><p>회원가입</p></a>
                 </div>
             </div>
+            <div id="recent_view">
+                최근 본 상품
+            </div>
+            <div id="my_benefits">
+                혜택
+            </div>
+            <div id="my_save">
+                찜한 목록
+            </div>
         </aside>
-        <!-- <div id="results"></div>
-        <div id="pagination">
+        <div id="results"></div>
+        <!--<div id="pagination">
             <button id="prevButton" style="display:none;">이전</button>
             <span id="pages"></span>
             <button id="nextButton" style="display:none;">다음</button>
         </div> -->
+        
     </Main>
+    <footer>
+        ㅎㅇ
+    </footer>
 </body>
-<!-- <script src="../JS/index.js"></script> -->
+<script src="../JS/index.js"></script>
+
+<script>
+    function login() {
+        window.location.href = './HTML/login.html';
+    }
+</script>
 </html>

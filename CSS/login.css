@@ -1,0 +1,76 @@
+*{margin : 0;padding : 0;}
+#wrap{
+    border: 3px solid pink;
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10%
+}
+#logo{
+    /* border : 1px solid blue; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 4em;
+    margin-top: 20px;
+}
+#logo img{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: auto;
+    display: block;
+}
+
+#loginform{
+    /* border: 3px solid blue; */
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+#id,#pw{
+    width: 100%;    
+    height: 4em;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: pink;
+    box-sizing: border-box;
+    outline: none;
+}
+#id{border-radius: 15px 15px 0px 0px; border-width: 1px 1px 0px 1px;}
+#pw{border-radius: 0px 0px 15px 15px; border-width: 1px 1px 1px 1px;}
+
+#btn_login{
+    width: 100%;    
+    height: 4em;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: pink;
+}
+#btn_login span{
+    font-weight: 700;
+    font-size: 16px;
+}
+#keep_login_check{
+    margin-top: 20px;
+}
+#keep_login_check span{
+    
+
+}
+#search_id_pw_join{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 20px 0px;
+    color: #000;
+    
+}
+#search_id_pw_join a{
+    text-decoration-line: none;
+    color: #000;
+}
