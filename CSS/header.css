@@ -1,0 +1,104 @@
+
+/* 헤더관련 css */
+Header{
+    border: 3px solid black;
+    box-sizing: border-box;
+    max-width: 1200px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#heder_Top{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#heder_Top img{
+    width: 200px;
+    height: 50px;
+
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+#login_btn p{
+    text-align: center;
+    line-height: 50px;
+}
+#cart img{
+    width: 50px;
+    height: 50px;
+}
+/* heder_Bot */
+#heder_Bot{
+    /* border: 3px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+#heder_Bot nav{
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    /* height: 40px; */
+}
+#heder_Bot nav ul{
+    /* border: 3px solid green; */
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#heder_Bot nav ul li{
+    line-height: 40px;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    /* background-color: lightgray; */
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#search_bar{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+    border: 2px solid #fecccc;
+    border-radius: 20px;
+
+}
+#searchInput{
+    width: 85%;
+    height: 90%;
+    min-width: none;
+    border: none;   
+    outline: none;
+
+    padding-left: 5%;
+    font-size: 20px;
+    border-radius: calc(30px);
+}
+#searchButton{
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+#searchButton img{
+    width: 30px;
+    height: 30px;
+}
+#search_bar :hover{
+    cursor: pointer;
+}

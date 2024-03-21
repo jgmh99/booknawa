@@ -1,0 +1,100 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1220,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "BhaMEAAAQBAJ",
+      "etag": "zg//k1DIsYs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BhaMEAAAQBAJ",
+      "volumeInfo": {
+        "title": "전문가를 위한 파이썬 프로그래밍(제4판)",
+        "subtitle": "애플리케이션 구축, 유지보수, 패키징, 배포 등 모던 파이썬 개발 마스터하기",
+        "authors": [
+          "미하우 야보르스키 (Michał Jaworski)",
+          "타레크 지아데 (Tarek Ziade)"
+        ],
+        "publisher": "제이펍",
+        "publishedDate": "2022-09-27",
+        "description": "베테랑에게 배우는 파이써닉한 애플리케이션 구축, 유지보수, 패키징 기법 파이썬 코드를 작성하기는 쉽지만, 유지보수하기 좋은 환경을 갖추고 가독성 높은 코드를 만들기는 쉽지 않다. 이 책은 수년간 다양한 파이썬 애플리케이션을 구현한 전문 경험을 담아, 프로덕션 레벨에서 파이썬을 파이썬답게 쓰기 위해 알아야 할 모든 것을 망라한 지침서다. 전문 파이썬 프로그래머라면 꼭 알아야 할 애플리케이션 구축, 유지보수, 패키징, 배포 방법을 자세히 살펴보고, 베스트 프랙티스, 유용한 도구, 표준을 배울 수 있다. 1~4장에서는 파이썬 프로그래머들이 이용하는 도구의 기본적인 요소들에 초점을 맞춘다. 생산성 도구, 현대적인 환경, 최신 파이썬 릴리스에서 도입된 새로운 구문 요소들을 살펴본다. 서로 다른 디펜던시들로 구성된 복잡한 환경을 세팅하는 우아한 방법부터 딕셔너리 병합, zoneinfo, 구조적 패턴 매칭 등 최신 파이썬 피처까지, 특히 다른 언어에서 파이썬으로 전향하는 개발자가 모던 파이썬 개발의 세계에 안착하는 데 도움을 준다. 5~9장에서는 디자인 패턴, 프로그래밍 패러다임, 메타프로그래밍 기법에 관해 살펴본다. 작은 규모의 예제 프로그램을 구현해보고 애플리케이션 아키텍처에 대해서도 깊이 다룬다. 인터페이스, 동시성, 이벤트 주도 프로그래밍/아키텍처 등 현대 애플리케이션 구축에서 반드시 고려해야 하는 요소를 파이써닉하게 구현하는 방법을 배운다. 파이썬의 태생적 성능 한계를 극복하기 위해 C/C++ 코드를 파이썬에 통합하는 방법도 살펴본다. 10~13장에서는 애플리케이션을 구축한 이후 쉽게 유지보수하는 데 도움이 되는 도구와 기법들을 살펴본다. 테스팅, 패키징 및 배포, 로깅 및 모니터링, 코드 최적화 등 개발 수명주기의 마지막 단계에 대해서도 다른 곳에서는 찾아보기 어려운 인사이트를 얻을 수 있다. 베테랑 개발자가 엄선한 베스트 프랙티스, 유용한 도구, 표준을 익힘으로써 파이썬 전문가에 한 걸음 더 가까워질 수 있다. 모던 파이썬 개발의 가장 깊은 곳으로 뛰어들자. 주요 내용 ■ 반복 가능하고 일관된 파이썬 개발 환경을 세팅하는 최신 방법들 ■ 커뮤니티 및 프로덕션 사용을 위해 파이썬 코드를 효과적으로 패키징하는 법 ■ f-string, enum, lambda 함수 등 모던 파이썬 구문 학습 ■ 메타클래스를 이용해 복잡한 파이썬 메타프로그래밍 쉽게 익히기 ■ 파이썬 동시성 코드 작성 ■ C/C++ 코드와 파이썬 코드의 통합",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9791192469355"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 595,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BhaMEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BhaMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ko",
+        "previewLink": "http://books.google.co.kr/books?id=BhaMEAAAQBAJ&printsec=frontcover&dq=%ED%8C%8C%EC%9D%B4%EC%8D%AC&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=BhaMEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BhaMEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 26600,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 23940,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=BhaMEAAAQBAJ&rdid=book-BhaMEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 26600000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 23940000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC_%EC%9C%84%ED%95%9C_%ED%8C%8C%EC%9D%B4%EC%8D%AC_%ED%94%84%EB%A1%9C%EA%B7%B8-sample-pdf.acsm?id=BhaMEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BhaMEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "베테랑에게 배우는 파이써닉한 애플리케이션 구축, 유지보수, 패키징 기법 파이썬 코드를 작성하기는 쉽지만, 유지보수하기 좋은 환경을 갖추고 가독성 높은 코드를 만들기는 쉽지 ..."
+      }
+    }
+  ]
+}
