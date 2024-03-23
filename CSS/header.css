@@ -1,7 +1,7 @@
 
 /* 헤더관련 css */
 Header{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     box-sizing: border-box;
     max-width: 1200px;
     min-width: 300px;
@@ -23,7 +23,7 @@ Header{
     width: 200px;
     height: 50px;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
     box-sizing: border-box;
 }
 #login_btn p{
@@ -62,7 +62,7 @@ Header{
     padding: 0px 10px;
     /* background-color: lightgray; */
     border-radius: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #ebebeb;
     height: 40px;
     line-height: 40px;
 }

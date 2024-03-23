@@ -12,7 +12,7 @@ p{
 Section{
     /* width: calc(100% - 30%); */
     width: 70%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     float: left;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ aside{
     height: 600px;
 }
 #login_box{
-    border: 3px solid pink;
+    border: 1px solid #ebebeb;
     border-radius: 10px;
     box-sizing: border-box;
     
@@ -97,4 +97,116 @@ aside{
     width: 100%;
     background-color: rgb(200, 249, 255);
     height: 7em;
+}
+/* 추천하는 책 */
+
+
+
+#suggestBook img{
+    width: 100%;
+    height: 65%;
+    
+}
+#sec_today_sug{
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px; */
+
+    /* overflow: hidden; */
+    display: flex;
+    gap: 20px;
+    transition: all 0.5s;
+    padding: 20px 0px 20px 20px;
+}
+.sec_name{
+    padding: 20px 0px 0px 20px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+    /* border: 1px solid #ebebeb; */
+}
+/* 캐러셀 */
+
+.carousel_container {
+    overflow: hidden;
+    width: 100%;
+
+    box-sizing: border-box;
+    position: relative;
+
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+}
+
+.carousel_container:hover #prevButton,.carousel_container:hover #nextButton{
+    opacity: 1;
+    transition: all 0.4s;
+}
+#prevButton,#nextButton{
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    font-size: large;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.3;
+}
+#prevButton{
+    bottom: 50%;
+    left: 0;
+    /* transform: translate(50%, 50%); */
+}
+#nextButton{
+    bottom: 50%;
+    right: 0;
+}  
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+  
+#suggestBook {
+    min-width: 25%; /* 각 책의 너비를 25%로 설정 */
+    box-sizing: border-box;
+    border : 1px solid #ebebeb;
+    border-radius: 15px;
+    overflow: hidden;
+    width: calc(100% / 4);
+    cursor: pointer;
+
+}
+#book_info{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.book_title{
+    font-family: "Dongle", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;    
+   
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+.book_cate{
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: gray;
+}
+.book_author{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
