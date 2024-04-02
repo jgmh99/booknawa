@@ -1,79 +1,61 @@
 {
   "kind": "books#volumes",
-  "totalItems": 1220,
+  "totalItems": 517,
   "items": [
     {
       "kind": "books#volume",
-      "id": "BhaMEAAAQBAJ",
-      "etag": "zg//k1DIsYs",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/BhaMEAAAQBAJ",
+      "id": "hlExDwAAQBAJ",
+      "etag": "fOLMKPyp594",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/hlExDwAAQBAJ",
       "volumeInfo": {
-        "title": "전문가를 위한 파이썬 프로그래밍(제4판)",
-        "subtitle": "애플리케이션 구축, 유지보수, 패키징, 배포 등 모던 파이썬 개발 마스터하기",
+        "title": "Crime and Punishment",
         "authors": [
-          "미하우 야보르스키 (Michał Jaworski)",
-          "타레크 지아데 (Tarek Ziade)"
+          "Fyodor Dostoyevsky"
         ],
-        "publisher": "제이펍",
-        "publishedDate": "2022-09-27",
-        "description": "베테랑에게 배우는 파이써닉한 애플리케이션 구축, 유지보수, 패키징 기법 파이썬 코드를 작성하기는 쉽지만, 유지보수하기 좋은 환경을 갖추고 가독성 높은 코드를 만들기는 쉽지 않다. 이 책은 수년간 다양한 파이썬 애플리케이션을 구현한 전문 경험을 담아, 프로덕션 레벨에서 파이썬을 파이썬답게 쓰기 위해 알아야 할 모든 것을 망라한 지침서다. 전문 파이썬 프로그래머라면 꼭 알아야 할 애플리케이션 구축, 유지보수, 패키징, 배포 방법을 자세히 살펴보고, 베스트 프랙티스, 유용한 도구, 표준을 배울 수 있다. 1~4장에서는 파이썬 프로그래머들이 이용하는 도구의 기본적인 요소들에 초점을 맞춘다. 생산성 도구, 현대적인 환경, 최신 파이썬 릴리스에서 도입된 새로운 구문 요소들을 살펴본다. 서로 다른 디펜던시들로 구성된 복잡한 환경을 세팅하는 우아한 방법부터 딕셔너리 병합, zoneinfo, 구조적 패턴 매칭 등 최신 파이썬 피처까지, 특히 다른 언어에서 파이썬으로 전향하는 개발자가 모던 파이썬 개발의 세계에 안착하는 데 도움을 준다. 5~9장에서는 디자인 패턴, 프로그래밍 패러다임, 메타프로그래밍 기법에 관해 살펴본다. 작은 규모의 예제 프로그램을 구현해보고 애플리케이션 아키텍처에 대해서도 깊이 다룬다. 인터페이스, 동시성, 이벤트 주도 프로그래밍/아키텍처 등 현대 애플리케이션 구축에서 반드시 고려해야 하는 요소를 파이써닉하게 구현하는 방법을 배운다. 파이썬의 태생적 성능 한계를 극복하기 위해 C/C++ 코드를 파이썬에 통합하는 방법도 살펴본다. 10~13장에서는 애플리케이션을 구축한 이후 쉽게 유지보수하는 데 도움이 되는 도구와 기법들을 살펴본다. 테스팅, 패키징 및 배포, 로깅 및 모니터링, 코드 최적화 등 개발 수명주기의 마지막 단계에 대해서도 다른 곳에서는 찾아보기 어려운 인사이트를 얻을 수 있다. 베테랑 개발자가 엄선한 베스트 프랙티스, 유용한 도구, 표준을 익힘으로써 파이썬 전문가에 한 걸음 더 가까워질 수 있다. 모던 파이썬 개발의 가장 깊은 곳으로 뛰어들자. 주요 내용 ■ 반복 가능하고 일관된 파이썬 개발 환경을 세팅하는 최신 방법들 ■ 커뮤니티 및 프로덕션 사용을 위해 파이썬 코드를 효과적으로 패키징하는 법 ■ f-string, enum, lambda 함수 등 모던 파이썬 구문 학습 ■ 메타클래스를 이용해 복잡한 파이썬 메타프로그래밍 쉽게 익히기 ■ 파이썬 동시성 코드 작성 ■ C/C++ 코드와 파이썬 코드의 통합",
+        "publisher": "Oxford University Press",
+        "publishedDate": "2017",
+        "description": "Crime and Punishment is the story of a murder committed on principle, of a killer who wishes to set himself outside and above society. It is marked by Dostoevsky's own harrowing experience, and yet there are moments of wild humour. This authoritative translation comes with a challenging new introduction and helpful annotation.",
         "industryIdentifiers": [
           {
             "type": "ISBN_13",
-            "identifier": "9791192469355"
+            "identifier": "9780198709701"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0198709706"
           }
         ],
         "readingModes": {
           "text": false,
           "image": true
         },
-        "pageCount": 595,
+        "pageCount": 545,
         "printType": "BOOK",
         "categories": [
-          "Computers"
+          "Literary Collections"
         ],
+        "averageRating": 5,
+        "ratingsCount": 1,
         "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": true,
-        "contentVersion": "0.2.1.0.preview.1",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.0.0.preview.1",
         "panelizationSummary": {
           "containsEpubBubbles": false,
           "containsImageBubbles": false
         },
         "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=BhaMEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=BhaMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          "smallThumbnail": "http://books.google.com/books/content?id=hlExDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=hlExDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
-        "language": "ko",
-        "previewLink": "http://books.google.co.kr/books?id=BhaMEAAAQBAJ&printsec=frontcover&dq=%ED%8C%8C%EC%9D%B4%EC%8D%AC&hl=&cd=1&source=gbs_api",
-        "infoLink": "https://play.google.com/store/books/details?id=BhaMEAAAQBAJ&source=gbs_api",
-        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BhaMEAAAQBAJ"
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=hlExDwAAQBAJ&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=hlExDwAAQBAJ&dq=Crime+and+Punishment&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Crime_and_Punishment.html?hl=&id=hlExDwAAQBAJ"
       },
       "saleInfo": {
         "country": "KR",
-        "saleability": "FOR_SALE",
-        "isEbook": true,
-        "listPrice": {
-          "amount": 26600,
-          "currencyCode": "KRW"
-        },
-        "retailPrice": {
-          "amount": 23940,
-          "currencyCode": "KRW"
-        },
-        "buyLink": "https://play.google.com/store/books/details?id=BhaMEAAAQBAJ&rdid=book-BhaMEAAAQBAJ&rdot=1&source=gbs_api",
-        "offers": [
-          {
-            "finskyOfferType": 1,
-            "listPrice": {
-              "amountInMicros": 26600000000,
-              "currencyCode": "KRW"
-            },
-            "retailPrice": {
-              "amountInMicros": 23940000000,
-              "currencyCode": "KRW"
-            }
-          }
-        ]
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
       },
       "accessInfo": {
         "country": "KR",
@@ -86,14 +68,769 @@
         },
         "pdf": {
           "isAvailable": true,
-          "acsTokenLink": "http://books.google.co.kr/books/download/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC_%EC%9C%84%ED%95%9C_%ED%8C%8C%EC%9D%B4%EC%8D%AC_%ED%94%84%EB%A1%9C%EA%B7%B8-sample-pdf.acsm?id=BhaMEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-pdf.acsm?id=hlExDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=BhaMEAAAQBAJ&hl=&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=hlExDwAAQBAJ&hl=&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
       },
       "searchInfo": {
-        "textSnippet": "베테랑에게 배우는 파이써닉한 애플리케이션 구축, 유지보수, 패키징 기법 파이썬 코드를 작성하기는 쉽지만, 유지보수하기 좋은 환경을 갖추고 가독성 높은 코드를 만들기는 쉽지 ..."
+        "textSnippet": "Crime and Punishment is the story of a murder committed on principle, of a killer who wishes to set himself outside and above society."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "U5NhxE67JjMC",
+      "etag": "oe1iRWhX/10",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/U5NhxE67JjMC",
+      "volumeInfo": {
+        "title": "Crime and Punishment",
+        "authors": [
+          "Fyodor Dostoevsky"
+        ],
+        "publisher": "Vintage",
+        "publishedDate": "2012-08-08",
+        "description": "Hailed by Washington Post Book World as “the best [translation] currently available\" when it was first published, this second edition of Crime and Punishment has been updated in honor of the 200th anniversary of Dostoevsky’s birth. With the same suppleness, energy, and range of voices that won their translation of The Brothers Karamazov the PEN/Book-of-the-Month Club Prize, Richard Pevear and Larissa Volokhonsky offer a brilliant translation of Crime and Punishment, Dostoevsky's astounding pyschological thriller, newly revised for his bicentenniel. In Crime and Punishment, when Raskolnikov, an impoverished student living in the St. Petersburg of the tsars, commits an act of murder and theft, he sets into motion a story that is almost unequalled in world literature for its excruciating suspense, its atmospheric vividness, and its depth of characterization and vision. Dostoevsky’s drama of sin, guilt, and redemption transforms the sordid story of an old woman’s murder into the nineteenth century’s profoundest and most compelling philosophical novel.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307829603"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "030782960X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 591,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.14.12.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=U5NhxE67JjMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=U5NhxE67JjMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=U5NhxE67JjMC&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=U5NhxE67JjMC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=U5NhxE67JjMC"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 23380,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 21042,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=U5NhxE67JjMC&rdid=book-U5NhxE67JjMC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 23380000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 21042000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-epub.acsm?id=U5NhxE67JjMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=U5NhxE67JjMC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Hailed by Washington Post Book World as “the best [translation] currently available&quot; when it was first published, this second edition of Crime and Punishment has been updated in honor of the 200th anniversary of Dostoevsky’s birth. • ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "J_18AAAAIAAJ",
+      "etag": "biJ8twUZ9xA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/J_18AAAAIAAJ",
+      "volumeInfo": {
+        "title": "Crime and Punishment",
+        "authors": [
+          "Fyodor Dostoyevsky"
+        ],
+        "publisher": "Random House Digital, Inc.",
+        "publishedDate": "1994",
+        "description": "A man must endure relentless physical and mental punishments as retribution for his act of murder.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCSC:32106015659862"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 664,
+        "printType": "BOOK",
+        "categories": [
+          "Crime"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=J_18AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=J_18AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=J_18AAAAIAAJ&q=Crime+and+Punishment&dq=Crime+and+Punishment&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=J_18AAAAIAAJ&dq=Crime+and+Punishment&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Crime_and_Punishment.html?hl=&id=J_18AAAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=J_18AAAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A man must endure relentless physical and mental punishments as retribution for his act of murder. Introduction by W. J. Leatherbarrow; Translation by Richard Pevear and Larissa Volokhonsky"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "r_9yEAAAQBAJ",
+      "etag": "+0Sfs9oZY0I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/r_9yEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Crime and Punishment",
+        "authors": [
+          "Fyodor Dostoyevsky"
+        ],
+        "publisher": "DigiCat",
+        "publishedDate": "2022-05-28",
+        "description": "Crime and Punishment by Fyodor Dostoyevsky details the psychological agonies and moral quandaries of Rodion Raskolnikov, who prepares a scheme to kill a dishonest pawnbroker for her cash. One of the great works of Russian literature!",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "EAN:8596547021148"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 533,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.6.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=r_9yEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=r_9yEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=r_9yEAAAQBAJ&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=r_9yEAAAQBAJ&dq=Crime+and+Punishment&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Crime_and_Punishment.html?hl=&id=r_9yEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-epub.acsm?id=r_9yEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-pdf.acsm?id=r_9yEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=r_9yEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Crime and Punishment by Fyodor Dostoyevsky details the psychological agonies and moral quandaries of Rodion Raskolnikov, who prepares a scheme to kill a dishonest pawnbroker for her cash. One of the great works of Russian literature!"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BphYDgAAQBAJ",
+      "etag": "mIKRUpsj/RE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BphYDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Crime and Punishment: A New Translation",
+        "authors": [
+          "Fyodor Dostoevsky"
+        ],
+        "publisher": "Liveright Publishing",
+        "publishedDate": "2017-11-21",
+        "description": "A celebrated new translation of Dostoevsky’s masterpiece reveals the “social problems facing our own society” (Nation). Published to great acclaim and fierce controversy in 1866, Fyodor Dostoevsky’s Crime and Punishment has left an indelible mark on global literature and on our modern world. Declared a PBS “Great American Read,” Michael Katz’s sparkling new translation gives new life to the story of Raskolnikov, an impoverished student who sees himself as extraordinary and therefore free to commit crimes—even murder—in a work that best embodies the existential dilemmas of man’s instinctual will to power. Embracing the complex linguistic blend inherent in modern literary Russian, Katz “revives the intensity Dostoevsky’s first readers experienced, and proves that Crime and Punishment still has the power to surprise and enthrall us” (Susan Reynolds). With its searing and unique portrayal of the labyrinthine universe of nineteenth-century St. Petersburg, this “rare Dostoevsky translation” (William Mills Todd III, Harvard) will captivate lovers of world literature for years to come.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781631490347"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1631490346"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 608,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.7.7.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BphYDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BphYDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=BphYDgAAQBAJ&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=BphYDgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BphYDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 26137,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 23523,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=BphYDgAAQBAJ&rdid=book-BphYDgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 26137000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 23523000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment_A_New_Translation-sample-epub.acsm?id=BphYDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment_A_New_Translation-sample-pdf.acsm?id=BphYDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BphYDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Declared a PBS “Great American Read,” Michael Katz’s sparkling new translation gives new life to the story of Raskolnikov, an impoverished student who sees himself as extraordinary and therefore free to commit crimes—even ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "rre4uAAACAAJ",
+      "etag": "iSsPGf5phAM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/rre4uAAACAAJ",
+      "volumeInfo": {
+        "title": "죄와 벌(논술대비 초등학생을 위한 세계명작)",
+        "authors": [
+          "도스토예프스키"
+        ],
+        "publishedDate": "2010-09-15",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8931921721"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788931921724"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 224,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "ko",
+        "previewLink": "http://books.google.co.kr/books?id=rre4uAAACAAJ&dq=Crime+and+Punishment&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=rre4uAAACAAJ&dq=Crime+and+Punishment&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/%EC%A3%84%EC%99%80_%EB%B2%8C_%EB%85%BC%EC%88%A0%EB%8C%80%EB%B9%84_%EC%B4%88%EB%93%B1%ED%95%99%EC%83%9D%EC%9D%84.html?hl=&id=rre4uAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=rre4uAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AYc0DwAAQBAJ",
+      "etag": "fPVxYnUz+ZM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AYc0DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Crime and Punishment",
+        "authors": [
+          "Fyodor Dostoevsky"
+        ],
+        "publisher": "Oxford University Press",
+        "publishedDate": "2017-09-01",
+        "description": "'One death, in exchange for thousands of lives - it's simple arithmetic!' A new translation of Dostoevsky's epic masterpiece, Crime and Punishment (1866). The impoverished student Raskolnikov decides to free himself from debt by killing an old moneylender, an act he sees as elevating himself above conventional morality. Like Napoleon he will assert his will and his crime will be justified by its elimination of 'vermin' for the sake of the greater good. But Raskolnikov is torn apart by fear, guilt, and a growing conscience under the influence of his love for Sonya. Meanwhile the police detective Porfiry is on his trial. It is a powerfully psychological novel, in which the St Petersburg setting, Dostoevsky's own circumstances, and contemporary social problems all play their part.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780191019753"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0191019755"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 576,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AYc0DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AYc0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=AYc0DwAAQBAJ&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=AYc0DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=AYc0DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 11067,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 9960,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=AYc0DwAAQBAJ&rdid=book-AYc0DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 11067000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 9960000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-epub.acsm?id=AYc0DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-pdf.acsm?id=AYc0DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AYc0DwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&#39;One death, in exchange for thousands of lives - it&#39;s simple arithmetic!&#39; A new translation of Dostoevsky&#39;s epic masterpiece, Crime and Punishment (1866)."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yOPBBAAAQBAJ",
+      "etag": "sWzFLJ9jeNo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yOPBBAAAQBAJ",
+      "volumeInfo": {
+        "title": "가난한 사람들",
+        "subtitle": "서문문고 006",
+        "authors": [
+          "표도르 도스토예프스키"
+        ],
+        "publisher": "서문당",
+        "publishedDate": "1996-08-20",
+        "description": "도스토예프스키 문학의 입문서. 뭇 사람들로부터 학대를 받고 있는 가난한 두 남녀가 주고 받은 감미롭고도 애절한 사랑의 편지. 이 작품의 밑바닥에 흐르는 사랑의 정신을 감지한 사람은 유구한 인류 생활에서의 행복의 열쇠를 발견할 것이다. 19세기의 언어로 씌어진 사랑의 복음서이다. 세계 최고의 작가인 도스토예프스키의 문학은 이 작품에서 비롯되었다는 점에서 더없이 귀한 작품 중의 하나이다.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788972432067"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8972432067"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 293,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Collections"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yOPBBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yOPBBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ko",
+        "previewLink": "http://books.google.co.kr/books?id=yOPBBAAAQBAJ&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=yOPBBAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=yOPBBAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 4000,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 3600,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=yOPBBAAAQBAJ&rdid=book-yOPBBAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 4000000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 3600000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/%EA%B0%80%EB%82%9C%ED%95%9C_%EC%82%AC%EB%9E%8C%EB%93%A4-sample-epub.acsm?id=yOPBBAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/%EA%B0%80%EB%82%9C%ED%95%9C_%EC%82%AC%EB%9E%8C%EB%93%A4-sample-pdf.acsm?id=yOPBBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yOPBBAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "도스토예프스키 문학의 입문서. 뭇 사람들로부터 학대를 받고 있는 가난한 두 남녀가 주고 받은 감미롭고도 애절한 사랑의 편지. 이 작품의 밑바닥에 흐르는 사랑의 정신을 감지한 ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AQ1mDAAAQBAJ",
+      "etag": "+1KKbkdUYZ0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AQ1mDAAAQBAJ",
+      "volumeInfo": {
+        "title": "죽음의 집의 기록 천줄읽기",
+        "authors": [
+          "표도르 도스토옙스키"
+        ],
+        "publisher": "지식을만드는지식",
+        "publishedDate": "2016-05-31",
+        "description": "도스토옙스키와 “죽음의 집”의 경험 ≪가난한 사람들≫로 엄청난 문학적 성공을 거둔 28세의 다소 오만한 젊은 작가는 페트라??스키 서클에서 당대 인텔리겐차 사이에 유행하던 유토피아적 사회주의에 대한 이론에 접하게 된다. 그는 푸리에주의, 그리고 공산적 경제 원리와 그것을 기반으로 한 지상에서의 이상 국가 건설 이론에 심취해 전 민중이 하나같이 잘 사는 사회에 대한 꿈과 그들의 이론에 크게 공감한다. 그러나 자유주의 사상과의 이 같은 짧은 놀음은 도스토옙스키로 하여금 저 유명한 가짜 처형극과 시베리아 감옥에서의 4년간의 수감, 시베리아 도시에서의 6년의 유형이란 가혹한 대가를 치르게 한다. 4년간의 수감 생활은 도스토옙스키에게 그를 둘러싸고 있던 밀수꾼, 화폐 위조자, 어린이 강간범, 부친 살해범, 강도 등과 같이 일상생활에서는 마주치기 어려운 인간상과 그들이 저지른 거의 모든 형태의 범죄에 대해서 깊이 있게 관찰할 기회를 제공했다. 도스토옙스키는 죄수를 보며 그들의 범죄와 이에 대해 죄수들이 갖는 심리적인 태도, 그리고 그들 하나하나의 심리적 메커니즘을 이해하려 노력했다. 이러한 관찰을 통해 시베리아 유형 전 도스토옙스키가 갖고 있던 이데올로기는 많은 변형을 거치지 않으면 안 되었다. 첫째, 작가는 인간 본성의 어둡고 야만적인 면을 발견하게 된다. 시베리아의 감옥은 작가에게 악을, 그것도 추상적인 원리가 아닌, 매일매일 한 사람 한 사람의 실제적 행동으로 나타나는 구체적인 악과 대면시켰다. 인간 본성의 심연 속에 있는 선과 악의 카오스와 악마적 요소의 우세를 보고 난 후, 푸리에주의의 인간 본성 이론으로부터 작가가 자신의 신념으로 받아들였던 ‘본성적인 선’에 대한 믿음을 갖는다는 것은 더 이상 불가능했다. 둘째, 인간이 이성적인 존재라는 것에 대한 작가 자신의 신념에 대한 수정이 가해졌다. 도스토옙스키는 죄수들의 병적으로 야심 있는 성질이 때로는 자아의 이성에 반대되는 행동과 결과를 낳음을 보았고, 인간의 행위는 더 이상 이성으로 예측할 수 있는 그 어떤 것이 아님을 깨닫게 되었다. 셋째. 죄수들 간의 힘의 역학 관계에 대한 관찰을 통해, 그는 자신의 이전의 신념, 즉 인류가 어떤 지배자도 피지배자도, 또 가해자도 피해자도 없이 평등하고 동등한 관계에서 조화로이 살아갈 수 있다는 신념에 대한 명백한 반증들을 발견했다. 죄수들 간의 격렬한 우위 다툼을 목격하고 가해자이며 피해자가 되고자 하는 인간 본성의 모순을 발견하게 된다. 이 발견은 도스토옙스키로 하여금 동등한 권리를 누리는 개인들이 평화로이 공존할 수 있다는 이전의 믿음을 지지할 수 없게 했다. 이렇게 시베리아 유형이라는 개인적인 불행은 후일 세상을 깜짝 놀라게 할 만한 천재 작가로 태어나기 위해서는 없어서는 안 될 소중한 경험이 된다. 범죄 심리와 심리 분석의 대가로 일컬어지는 작가 도스토옙스키의 많은 부분이 온갖 형태의 죄수들과 부대끼며 보낸 4년간의 시베리아 유형 생활에 빚지고 있음은 분명하다. 또한 이런 시베리아 경험과 성서 읽기를 통해, 종교 작가로서의 도스토옙스키가 태어나는 것이다. 도스토옙스키가 경험한 4년간의 “죽음의 집”의 경험은 물론 개인적이고 현실적인 차원에서는 벌이요, 고통이었겠으나, 예술적 차원에서는 위대한 작가로 태어나기 위한 산고의 세월이었으며, 철학적 차원에서는 민중과 러시아성에 대한 깊은 깨달음의 기회였고, 종교적 차원에서는 길을 잃고 헤매던 어린 양이 다시 하느님의 품으로 돌아오는 여정이었으며, 작가가 자신을 죽음을 통해 부활한 나자로와 동일시하게 되었던 대사건이었다.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9791130461243"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 178,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.5.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AQ1mDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AQ1mDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ko",
+        "previewLink": "http://books.google.co.kr/books?id=AQ1mDAAAQBAJ&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=AQ1mDAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=AQ1mDAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 9600,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 8640,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=AQ1mDAAAQBAJ&rdid=book-AQ1mDAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9600000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 8640000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/%EC%A3%BD%EC%9D%8C%EC%9D%98_%EC%A7%91%EC%9D%98_%EA%B8%B0%EB%A1%9D_%EC%B2%9C%EC%A4%84%EC%9D%BD%EA%B8%B0-sample-epub.acsm?id=AQ1mDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/%EC%A3%BD%EC%9D%8C%EC%9D%98_%EC%A7%91%EC%9D%98_%EA%B8%B0%EB%A1%9D_%EC%B2%9C%EC%A4%84%EC%9D%BD%EA%B8%B0-sample-pdf.acsm?id=AQ1mDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AQ1mDAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "도스토옙스키와 “죽음의 집”의 경험 ≪가난한 사람들≫로 엄청난 문학적 성공을 거둔 28세의 다소 오만한 젊은 작가는 페트라??스키 서클에서 당대 인텔리겐차 사이에 유행하던 ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "mFjTYWP5I0kC",
+      "etag": "l0Vr/j+IFVg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mFjTYWP5I0kC",
+      "volumeInfo": {
+        "title": "Crime and Punishment",
+        "authors": [
+          "Marilyn Campbell",
+          "Curt Columbus"
+        ],
+        "publisher": "Dramatic Publishing",
+        "publishedDate": "2004",
+        "description": "Why do the dark recesses of the human soul endlessly fascinate us? Dostoevsky's classic, celebrated tale of motive and murder, Crime and Punishment is perhaps the greatest and most insightful crime story ever written. In the tortured world of Raskolnikov, questions with psychological, philosophical, and spiritual import arise: What has he done? Why has he done it? What are any of us capable? These haunting questions are intricately woven into this three-actor adaptation, a heart-racing journey into the mind of a criminal.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1583422250"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781583422250"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 60,
+        "printType": "BOOK",
+        "categories": [
+          "Murder"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.4.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mFjTYWP5I0kC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mFjTYWP5I0kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=mFjTYWP5I0kC&printsec=frontcover&dq=Crime+and+Punishment&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=mFjTYWP5I0kC&dq=Crime+and+Punishment&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Crime_and_Punishment.html?hl=&id=mFjTYWP5I0kC"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Crime_and_Punishment-sample-pdf.acsm?id=mFjTYWP5I0kC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mFjTYWP5I0kC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Why do the dark recesses of the human soul endlessly fascinate us? Dostoevsky&#39;s classic, celebrated tale of motive and murder, Crime and Punishment is perhaps the greatest and most insightful crime story ever written."
       }
     }
   ]

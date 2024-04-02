@@ -1,3 +1,6 @@
+body{
+    background-color: #fff;
+}
 Main{
     width: 100%;
     /* border: 1px solid green; */
@@ -8,6 +11,9 @@ Main{
 }
 p{
     margin: 0;
+}
+hr{
+    margin: 20px 0;
 }
 Section{
     /* width: calc(100% - 30%); */
@@ -21,17 +27,21 @@ Section{
 #ad{
     width: 100%;
     height: 7em;
-    /* border: 1px solid red; */
-    background-color: red;
     text-align: center;
-    /* font-size: 20px; */
+    overflow:hidden;
+    display: flex;
+    border-radius: 15px;
+}
+#ad img{
+    width: 100%;
+    height: 100%;
 }
 #bm_suggestion{
     width: 100%;
-    height: 20em;
-    background-color: blue;
-    color : #fff;
-    text-align: center;
+    /* height: 20em; */
+    /* background-color: blue; */
+    color : #000;
+    /* text-align: center; */
 }
 /* -------------------------------------------- */
 aside{
@@ -74,19 +84,23 @@ aside{
 }
 #login_box button{
     height: 3em;
-    background-color: pink;
+    background-color: #303dd7;;
     border: none;
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
     font-size: 16px;
     cursor: pointer;
+    color: #fff;
 }
 #login_box button span{font-size: 16px; font-weight: 700;}
 #recent_view{
     width: 100%;
-    background-color: pink;
-    height: 10em;
+    /* border: 1px solid #ebebeb; */
+    box-sizing: border-box;
+    border-radius: 15px;
+    /* background-color: pink; */
+    /* height: 10em; */
 }
 #my_benefits{
     width: 100%;
@@ -107,7 +121,7 @@ aside{
     height: 65%;
     
 }
-#sec_today_sug{
+#sec_today_sug,#sec_pub_rec{
     box-sizing: border-box;
     /* display: flex;
     flex-direction: row;
@@ -127,6 +141,7 @@ aside{
     font-weight: 900;
     font-style: normal;
     font-size: 32px;
+    text-align: center;
     /* border: 1px solid #ebebeb; */
 }
 /* 캐러셀 */
@@ -140,6 +155,7 @@ aside{
 
     border: 1px solid #ebebeb;
     border-radius: 15px;
+    
 }
 
 .carousel_container:hover #prevButton,.carousel_container:hover #nextButton{
@@ -180,6 +196,15 @@ aside{
     cursor: pointer;
 
 }
+#suggestBook:hover {
+    border: 2px solid blue;
+    box-sizing: border-box;
+
+}
+#suggestBook:hover #suggestBook img{
+    transform: scale(1.4);
+}
+
 #book_info{
     padding-left: 20px;
     display: flex;
@@ -187,10 +212,10 @@ aside{
     gap: 5px;
 }
 .book_title{
-    font-family: "Dongle", sans-serif;
-    font-weight: 900;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
     font-style: normal;
-    font-size: 24px;    
+    font-size: 20px;    
    
     overflow:hidden;
     text-overflow:ellipsis;
@@ -208,5 +233,87 @@ aside{
     font-family: "Noto Sans KR", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+}
+/* 광고배너 */
+
+#ad{
+    
+    
+}
+.ad_1_1 {
+    width:45%;
+    height:100%;
+    border-radius:15px;
+    /* background:black; */
+    transform:
+      skew(-20deg)
+      translate(19px, 0px);
+    border : 1px solid #ebebeb;
+    /* background-image: url(../IMG/opensale.jpeg);
+    background-repeat : no-repeat;
+    background-size : cover; */
+    overflow: hidden;
+    background-color: #303dd7;
+}
+.ad_1_1 img,.ad_1_2 img{
+    width: 100%;
+    height: 100%;
+    transform: skew(20deg);
+    overflow: hidden;
+}
+.ad_1_2 {
+    width:45%;
+    height:100%;
+    border-radius:15px ;
+    /* background:black; */
+    transform:
+      skew(-20deg)
+      translate(60px, 0px);
+    border : 1px solid #ebebeb;
+    overflow: hidden;
+    /* background-color: rgb(81 91 222); */
+    background: linear-gradient(0.1turn, rgb(85 93 215), rgb(70 79 212));
+  }
+/* aside - 최근 본 상품 */
+#sec_recent_view{
+    /* border : 1px solid red; */
+    border-radius: 15px;
+    border : 1px solid #ebebeb;
+}
+#sec_recent_view p{
+    padding: 0;
+}
+#recent_view{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+#recent_book{
+    width: calc((100% - (20px)) / 2);
+    border-radius: 15px;
+    overflow: hidden;
+    /* height: 13em; */
+    display: flex;
+    flex-direction: column;
+    border : 1px solid #ebebeb;
+}
+#recent_book img{
+    width: 100%;
+    height: 85%
+    /* overflow: hidden; */
+}
+#recent_book p{
+    /* padding-left: 1em; */
+    padding: 1em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
 }

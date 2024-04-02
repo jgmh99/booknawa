@@ -46,7 +46,7 @@
                     <li><a href="#"><p>감상문</p></a></li>
                     <li><a href="#"><p>Best</p></a></li>
                     <li><a href="#"><p>E-Book</p></a></li>
-                    
+                    <li><a href="#"><p>이벤트</p></a></li>
                 </ul>
             </nav>
         </div>
@@ -54,30 +54,37 @@
     <Main>
         <Section id="sec">
             <div class="carousel_container">
-                <p class="sec_name">오늘의 추천</p>
+                <p class="sec_name">MD's Pick</p>
                 <div id="sec_today_sug" class="carousel-slide">
                      <!-- 동적으로 책 정보가 추가 -->
                 </div>
-                <button id="prevButton">＜</button>
-                <button id="nextButton">＞</button>
+                <button id="prevButton" data-carousel="sec_today_sug">＜</button>
+                <button id="nextButton" data-carousel="sec_today_sug">＞</button>
             </div>
-            <div id="bm_suggestion">
-                북나와 매니저 추천!
-            </div>
-
-            <div id="ad"></div>
-
-            <div id="bm_suggestion">
-                New!
-            </div>
-            <div id="ad"></div>
-            <div id="bm_suggestion">
-                Best & 스테디
-            </div>
-            <div id="bm_suggestion">
-                북나와 매니저 추천!
+            <div id="ad" class="ad_1">
+                <div class="ad_1_1">
+                    <img src="./IMG/opensale.jpeg" alt="">
+                </div>
+                <div class="ad_1_2">
+                    <img src="./IMG/opensale2.jpeg" alt="">
+                </div>
+                
             </div>
 
+            <div id="bm_suggestion" class="carousel_container">
+                <p class="sec_name">이번주의 책</p>
+                <div id="sec_pub_rec" class="carousel-slide">
+                    <!-- 동적으로 책 정보가 추가 -->
+               </div>
+               <button id="prevButton" data-carousel="sec_pub_rec">＜</button>
+               <button id="nextButton" data-carousel="sec_pub_rec">＞</button>
+            </div>
+
+            <div id="ad" class="ad_2">
+                <a href="https://product.kyobobook.co.kr/detail/S000212390381" >
+                    <img src="./IMG/ad_2.png" alt="">
+                </a>
+            </div>
         </Section>
         <aside>
             <div id="login_box">
@@ -91,30 +98,47 @@
                     <a href="#"><p>회원가입</p></a>
                 </div>
             </div>
-            <div id="recent_view">
-                최근 본 상품
+            <div id="sec_recent_view">
+                <p class="sec_name">최근 살펴본 상품</p>
+                <div id="recent_view" >
+                    <!-- 최근 본 상품 -->
+                </div>
             </div>
-            <div id="my_benefits">
+            <!-- <div id="my_benefits">
                 혜택
-            </div>
-            <div id="my_save">
+            </div> -->
+            <!-- <div id="my_save">
                 찜한 목록
-            </div>
+            </div> -->
         </aside>
         <div id="results"></div>
-        <!--<div id="pagination">
-            <button id="prevButton" style="display:none;">이전</button>
-            <span id="pages"></span>
-            <button id="nextButton" style="display:none;">다음</button>
-        </div> -->
-        
     </Main>
+    <hr>
     <footer>
-        
+        <div id="footer_sec_1">
+            <ul>
+                <li><p>※본 사이트는 실제 판매사이트가 아닌 포트폴리오 용 사이트 임 을 알립니다.※</p></li>
+                <li><p>※문제 있는 부분은 즉각 반영하여 삭제 및 조치 하겠습니다.※</p></li>
+                <li><p>※광고에 사용된 이미지는 '교보문고' 와 ''에서 사용하였습니다.※</p></li>
+                <li><p>피드백 주실 곳 : <a href="#">카카오톡</a></p></li>
+            </ul>
+        </div>
+        <div id="footer_sec_2">
+            <p>-Contact-</p>
+            <div class="footer_icon">
+                <a href="">
+                    <img src="./IMG/cart.png" alt="">
+                    <p>오픈채팅</p>
+                </a>
+            </div>
+        </div>
+        <div id="footer_sec_3">
+            <p>-Project Link-</p>
+            <a href="https://github.com/jgmh99/booknawa">Github</a>
+        </div>        
     </footer>
 </body>
 <script src="../JS/index.js"></script>
-
 <script>
     function login() {
         window.location.href = './HTML/login.html';

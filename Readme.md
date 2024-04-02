@@ -16,3 +16,27 @@ font-style: normal;
 font-family: "Song Myung", serif;
 font-weight: 400;
 font-style: normal;
+
+-------
+2024.03.24
+google books api 관리를 위해서 npm install dotenv 라이브러리 설치
+github .env 올라가는거 방지 위해서 .gitignore 에 .env추가
+
+
+--------------------------
+api키를 추가해야지 정확한 카테고리가 나옴
+예시 : https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=AIzaSyBQHuGBIi0jR-oH7Yf9KgPSRUcqcULbkHg
+
+
+장르별 검색 : https://www.googleapis.com/books/v1/volumes?q=subject:${장르}
+-종류-
+intitle: 제목에 이 키워드 다음에 오는 텍스트가 있는 결과를 반환합니다.
+inauthor: 이 키워드 뒤에 오는 텍스트가 작성자에 있는 결과를 반환합니다.
+inpublisher: 이 키워드 다음에 오는 텍스트가 게시자에 있는 경우의 결과를 반환합니다.
+subject:: 이 키워드 다음에 오는 텍스트가 볼륨의 카테고리 목록에 나열된 결과를 반환합니다.
+isbn:: 이 키워드 다음에 오는 텍스트가 ISBN 숫자인 결과를 반환합니다.
+lccn: 이 키워드 다음에 오는 텍스트가 미국 의회 도서관 제어 번호인 결과를 반환합니다.
+oclc:: 이 키워드 뒤에 있는 텍스트가 온라인 컴퓨터 라이브러리 센터 번호인 결과를 반환합니다.
+
+--------------------------
+3/31 최근 본 책 최대 10개 까지 쿠키에 저장
