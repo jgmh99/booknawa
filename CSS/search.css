@@ -1,0 +1,173 @@
+#results{
+    /* border: 1px solid; */
+    /* background-color: rgb(234, 234, 234); */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+#results :nth-child(10){
+    border-bottom: none;
+}
+#book{
+    border-bottom: 1px solid black;
+    background-color: #fff;
+    /* box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04); */
+    display: flex;
+    flex-direction: row;
+    height: 20em;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+#book_thumbnail{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 10px;
+    padding: 20px;
+}
+#book_thumbnail img{
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+    height: 90%;
+}
+
+#book_thumbnail_info{
+    /* border: 1px solid #303dd7; */
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+#desc{
+    width: 60%;
+    /* height: 5em; */
+    /* border: 1px solid #303dd7; */
+    /* 3줄로 나누고 자름 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    font-style: italic;
+    font-family: "Song Myung", serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: gray;
+
+    /* padding: 20px; */
+    margin-left: 20px;
+
+    padding: 3px;
+}
+/* 미리보기 & 새창열기 버튼 */
+#book_thumbnail_btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#book_thumbnail_btn span{
+    width: calc((100% - 10px) / 2);
+    border: 1px solid #ebebeb;
+    text-align: center;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+}
+#book_thumbnail_info_title,
+#book_thumbnail_info_cate,
+#book_thumbnail_info_author{
+    margin-left: 20px;
+}
+#book_thumbnail_info_cate{
+    font-weight: 900;
+}
+.thumbnail_price{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+#book_thumbnail_info_price :nth-child(1){
+    font-weight: 900;
+    color : #303dd7;
+    font-size: 20px;
+    display: inline;
+    
+}
+#book_thumbnail_info_price :nth-child(2){
+    font-size: 20px;
+    padding: 0 0.5em;
+    display: inline;
+}
+#book_thumbnail_info_price :nth-child(3){
+    font-size: 18px;
+    text-decoration : line-through;
+    display: inline;
+}
+
+#book_thumbnail_info_title p{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    /* font-style: bold; */
+}
+#goto_view{
+    width: 5em;
+    /* border: 1px solid green; */
+    background-color: #303dd7;
+    margin-left: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#goto_view a{
+    color: #fff;
+    padding: auto;
+}
+/* 페이지네이션 */
+#pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 3em;
+}
+#pagination span{
+    display: block;
+    height: 100%;
+    display: flex;
+    line-height: 3em;
+}
+#pagination span a{
+    display: block;
+    width: 3em;
+    margin: 0px 5px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+    border-radius: 50%;
+}
+#pagination span:hover{
+    cursor: pointer;
+}
+#prevButton,#nextButton{
+    /* width: 3.6em; */
+    width: 48px;
+    height: 48px;
+    border: none;
+    /* height: 100%; */
+    /* border : 1px solid black; */
+    background-color: transparent;
+    background: url(../IMG/btn.png);
+    /* bacground-repeat : no-repeat */
+    /* background-size: 3.5em; */
+}
+#prevButton,#nextButton:hover{
+    cursor: pointer;
+}
+#prevButton{
+    rotate: 180deg;
+}

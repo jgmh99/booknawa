@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 책의 상세 정보를 가져와서 페이지에 표시하는 함수
     function displayBookInfo(bookId) {
-        const apiKey = "AIzaSyBQHuGBIi0jR-oH7Yf9KgPSRUcqcULbkHg"
-        const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}?key=${apiKey}`;
+        // const apiKey = "AIzaSyBQHuGBIi0jR-oH7Yf9KgPSRUcqcULbkHg"
+        // const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}?key=${apiKey}`;
 
-        // const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}`;
+        const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}`;
 
         fetch(apiUrl)
             .then(response => response.json())

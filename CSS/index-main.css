@@ -1,3 +1,4 @@
+
 body{
     background-color: #fff;
 }
@@ -54,7 +55,7 @@ aside{
     height: 600px;
 }
 #login_box{
-    border: 1px solid #ebebeb;
+    border: 1px solid #e3e5e8;
     border-radius: 10px;
     box-sizing: border-box;
     
@@ -62,6 +63,7 @@ aside{
     flex-direction: column;
     text-align: center;
     gap: 0.5em;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
 }
 #join_booknawa{
     display: flex;
@@ -96,7 +98,7 @@ aside{
 #login_box button span{font-size: 16px; font-weight: 700;}
 #recent_view{
     width: 100%;
-    /* border: 1px solid #ebebeb; */
+    /* border: 1px solid #e3e5e8; */
     box-sizing: border-box;
     border-radius: 15px;
     /* background-color: pink; */
@@ -142,7 +144,7 @@ aside{
     font-style: normal;
     font-size: 32px;
     text-align: center;
-    /* border: 1px solid #ebebeb; */
+    /* border: 1px solid #e3e5e8; */
 }
 /* 캐러셀 */
 
@@ -153,9 +155,10 @@ aside{
     box-sizing: border-box;
     position: relative;
 
-    border: 1px solid #ebebeb;
+    border: 1px solid #e3e5e8;
     border-radius: 15px;
     
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
 }
 
 .carousel_container:hover #prevButton,.carousel_container:hover #nextButton{
@@ -189,13 +192,25 @@ aside{
 #suggestBook {
     min-width: 25%; /* 각 책의 너비를 25%로 설정 */
     box-sizing: border-box;
-    border : 1px solid #ebebeb;
+    border : 1px solid #e3e5e8;
     border-radius: 15px;
     overflow: hidden;
     width: calc(100% / 4);
     cursor: pointer;
 
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
 }
+.book_authors{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
 #suggestBook:hover {
     border: 2px solid blue;
     box-sizing: border-box;
@@ -249,7 +264,7 @@ aside{
     transform:
       skew(-20deg)
       translate(19px, 0px);
-    border : 1px solid #ebebeb;
+    border : 1px solid #e3e5e8;
     /* background-image: url(../IMG/opensale.jpeg);
     background-repeat : no-repeat;
     background-size : cover; */
@@ -270,7 +285,7 @@ aside{
     transform:
       skew(-20deg)
       translate(60px, 0px);
-    border : 1px solid #ebebeb;
+    border : 1px solid #e3e5e8;
     overflow: hidden;
     /* background-color: rgb(81 91 222); */
     background: linear-gradient(0.1turn, rgb(85 93 215), rgb(70 79 212));
@@ -279,7 +294,8 @@ aside{
 #sec_recent_view{
     /* border : 1px solid red; */
     border-radius: 15px;
-    border : 1px solid #ebebeb;
+    border : 1px solid #e3e5e8;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
 }
 #sec_recent_view p{
     padding: 0;
@@ -299,7 +315,9 @@ aside{
     /* height: 13em; */
     display: flex;
     flex-direction: column;
-    border : 1px solid #ebebeb;
+    border : 1px solid #e3e5e8;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+    margin-bottom: 10px;
 }
 #recent_book img{
     width: 100%;
@@ -312,6 +330,7 @@ aside{
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
+
     font-family: "Noto Sans KR", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;

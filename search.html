@@ -3,14 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>검색 결과</title>
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/search.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&family=Song+Myung&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="results"></div>
-    <div id="pagination">
-        <button id="prevButton">이전</button>
-        <span id="pages"></span>
-        <button id="nextButton">다음</button>
-    </div>
-    <script src="./js/search.js"></script>
+    <Header>
+        <div id="heder_Top">
+            <a href="./index.html">
+                <img src="./IMG/Booknawa.png" alt="책나와 로고">
+            </a>
+            <nav>
+                <ul>
+                    <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="장바구니"></a></li>
+                    <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="찜"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="heder_Bot">
+            <div id="search_bar">
+                <input type="text" id="searchInput" placeholder="검색할 책을 입력해주세요!">
+                <button id="searchButton" onclick=searchBooks()><img src="./IMG/searchbtn.png" alt=""></button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><p>상세 검색</p></a></li>
+                    <li><a href="#"><p>감상문</p></a></li>
+                    <li><a href="#"><p>Best</p></a></li>
+                    <li><a href="#"><p>E-Book</p></a></li>
+                    <li><a href="#"><p>이벤트</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </Header>
+    <Main>
+        <div id="results">
+            <!-- 검색결과 들어감 -->
+        </div>
+        <div id="pagination">
+            <button id="prevButton"></button>
+            <span id="pages"></span>
+            <button id="nextButton"></button>
+        </div>
+    </Main>
+    
+    
+    <script src="./JS/search.js"></script>
+    <script src="./JS/header-searchbar.js"></script>
 </body>
 </html>
