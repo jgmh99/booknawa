@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="./CSS/common.css">
+    <!-- 헤더 CSS -->
+    <link rel="stylesheet" href="./CSS/header.css">
 </head>
 <body>
-    <div id="results"></div>
+    <Header>
+        <div id="heder_Top">
+            <a href="./index.html">
+                <img src="./IMG/Booknawa.png" alt="책나와 로고">
+            </a>
+            <nav>
+                <ul>
+                    <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="장바구니"></a></li>
+                    <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="찜"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="heder_Bot">
+            <div id="search_bar">
+                <input type="text" id="searchInput" placeholder="검색할 책을 입력해주세요!">
+                <button id="searchButton" onclick=searchBooks()><img src="./IMG/searchbtn.png" alt=""></button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><p>상세 검색</p></a></li>
+                    <li><a href="#"><p>감상문</p></a></li>
+                    <li><a href="#"><p>Best</p></a></li>
+                    <li><a href="#"><p>E-Book</p></a></li>
+                    <li><a href="#"><p>이벤트</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </Header>
+    <Main style="border: 1px solid;">
+        <div id="results"></div>
+    </Main>
 </body>
 <script src="./JS/info.js"></script>
 </html>
