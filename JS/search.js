@@ -1,4 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+import config from "../config/config.js";
+const { API_KEY } = config;
+
+console.log(API_KEY);
+
+
+
     const resultsDiv = document.getElementById('results');
     const prevButton = document.getElementById('prevButton');
     const nextButton = document.getElementById('nextButton');
@@ -20,7 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=${currentIndex}&orderBy=newest&&maxResults=10`;
+        // const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=${currentIndex}&orderBy=newest&&maxResults=10`;
+        
+        //const apiUrl =  `http://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=${API_KEY}&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book`;
+        const apiUrl = `https://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=ttbjegal123421914001&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book&output=js`
 
         fetch(apiUrl)
             .then(response => response.json())
@@ -159,4 +168,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     searchBooks();
-});
+

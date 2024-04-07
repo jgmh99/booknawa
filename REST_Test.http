@@ -1,3 +1,5 @@
 //GET https://www.googleapis.com/books/v1/volumes?q=파이썬
 
-GET http://www.aladin.co.kr/ttb/api/ItemLookUp.aspx?ttbkey=ttbjegal123421914001
+//GET http://www.aladin.co.kr/ttb/api/ItemLookUp.aspx?ttbkey=process.env.API_KEY
+
+GET https://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=ttbjegal123421914001&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book&output=js
