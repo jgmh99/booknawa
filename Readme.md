@@ -43,3 +43,6 @@ oclc:: 이 키워드 뒤에 있는 텍스트가 온라인 컴퓨터 라이브러
 4/02 검색페이지 api수정
 4/05 info.html ui 제작
 4/06 google api -> 알라딘 api로 교체 시작
+4/07 알라딘 api로 교체중 cors만남
+    -> https://cors-anywhere.herokuapp.com/{api주소}
+        ->저 친구가 알아서 중간에 HTTP응답 헤더에 Acccess-Control-Allow-Origin 세팅해준다고 하여 사용₩

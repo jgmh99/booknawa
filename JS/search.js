@@ -26,11 +26,10 @@ console.log(API_KEY);
             return;
         }
 
-        // const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=${currentIndex}&orderBy=newest&&maxResults=10`;
+        const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=${currentIndex}&orderBy=newest&&maxResults=10`;
         
-        //const apiUrl =  `http://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=${API_KEY}&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book`;
-        const apiUrl = `https://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=ttbjegal123421914001&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book&output=js`
-
+        // const apiUrl =  `http://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=${API_KEY}&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book`;
+        // const apiUrl = `https://www.aladin.co.kr/ttb/api/ItemSearch.aspx?ttbkey=${API_KEY}&Query=파이썬&QueryType=Title&MaxResults=10&start=1&SearchTarget=Book&output=js&Version=20131101`;
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
@@ -67,7 +66,6 @@ console.log(API_KEY);
 
             // 할인율 계산 함수 호출
             const discountText = calculateDiscountPercentage(bookslistprice, booksretailprice);
-
             return `<div id="book">
                         <div id="book_thumbnail">
                             <img src="${bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : '../IMG/Not_FOR_SALE.png'}" alt="${bookInfo.title}">
@@ -109,10 +107,11 @@ console.log(API_KEY);
                             </div>
                         </div>
                     </div>`;
+                    
         }).join('');
 
         resultsDiv.innerHTML = books;
-
+        
         //할인율 계산 함수
         function calculateDiscountPercentage(listPrice, retailPrice) {
             if (listPrice === '가격 정보 없음' || retailPrice === '가격 정보 없음') {

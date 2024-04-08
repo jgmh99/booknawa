@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "Satire",
             "Science Fiction",
     ];
-
+    
     /** 쿠키생성하고 저장하는 wwwwww */
     function setCookie(name, value, days) {
         var expires = "";
@@ -48,27 +48,116 @@ document.addEventListener('DOMContentLoaded', function() {
         return null;
     }
     
+    function addRecentBookIdToCookie(bookId) {
+        let recentBookIds = getRecentBookIdsFromCookie();
+        
+        // 최대 6개까지 유지
+        if (recentBookIds.length >= 6) {
+            recentBookIds.pop(); // 가장 오래된 항목 제거
+        }
+        recentBookIds.unshift(bookId); // 새로운 항목을 배열 맨 앞에 추가
+        setCookie('recentBookIds', JSON.stringify(recentBookIds), 7); // 7일 동안 유효
+    }
+    function getRecentBookIdsFromCookie() {
+        const recentBookIdsCookie = getCookie('recentBookIds');
+        if (recentBookIdsCookie) {
+            return JSON.parse(recentBookIdsCookie);
+        } else {
+            return [];
+        }
+    }
+    function displayRecentViewedBooks() {
+        const recentBookIds = getRecentBookIdsFromCookie();
+        const recentViewContainer = document.getElementById('recent_view');
+        console.log('쿠키에 저장된 책 목록 bookid: ' + recentBookIds);
+    
+        // 책 ID 배열이 비어있는지 확인
+        if (!recentBookIds || recentBookIds.length === 0) {
+            // 최근에 본 책이 없다는 메시지 표시
+            recentViewContainer.innerHTML = `
+                <div class="notRecrntViewBook">
+                    <p>최근에 보신 상품이 없어요!</p>
+                    <p>찾고계신 책을 찾으러 가볼까요??</p>
+                </div>
+            `;
+            return; // 함수 종료
+        }
+    
+        recentBookIds.forEach((bookId) => {
+            const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}`;
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const bookInfo = data.volumeInfo;
+    
+                    // 책 이미지와 제목, 'X' 버튼을 포함하는 div 요소 생성
+                    const bookDiv = document.createElement('div');
+                    bookDiv.id = 'recent_book'; // id 대신 className 사용
+                    bookDiv.innerHTML = `
+                        <a href="info.html?id=${bookId}" target="blank">
+                            <img src="${bookInfo.imageLinks ? bookInfo.imageLinks.smallThumbnail : '../IMG/Not_FOR_SALE.png'}" alt="${bookInfo.title}">
+                            <p>${bookInfo.title}</p>
+                        </a>
+                        <button class="deleteBookBtn" data-bookid="${bookId}"> ✖️</button> 
+                    `;
+    
+                    // 생성한 div 요소를 recentViewContainer에 추가
+                    recentViewContainer.appendChild(bookDiv);
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    }
+    displayRecentViewedBooks();
+    
+    // 쿠키에서 특정 책의 ID를 삭제하는 함수
+    function deleteBookFromCookie(bookId) {
+        let recentBookIds = getRecentBookIdsFromCookie();
+        recentBookIds = recentBookIds.filter(id => id !== bookId);
+        setCookie('recentBookIds', JSON.stringify(recentBookIds), 7); // 변경된 배열로 쿠키 업데이트
+    }
+    
+    // 'X' 버튼 클릭 이벤트 처리
+    document.addEventListener('click', function(event) {
+        if (event.target.className === 'deleteBookBtn') {
+            const bookId = event.target.getAttribute('data-bookid');
+            // confirm 대화 상자를 통한 삭제 확인
+            const isConfirmed = confirm('선택한 상품을 삭제하시겠습니까?');
+            if (isConfirmed) {
+                deleteBookFromCookie(bookId);
+                alert('선택한 상품이 삭제 되었어요!');
+                location.reload(); // 페이지 새로고침
+            }
+        }
+    });
+    
+    
+    /** 쿠키생성하고 저장해서 최근봉 상품에 출력하는 wwww */
+
+    // 쿠키 전체 삭제 기능
+    function deleteCookie(name) {
+        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;';
+    }
+
+    window.onload = function() {
+        const cookieValue = getCookie('recentBookIds');
+        console.log('페이지 로드시 쿠키 확인',cookieValue);
+        if (cookieValue) {
+            document.getElementById('deleteCookieBtn').style.display = 'inline-block'; // 쿠키가 있을 때만 버튼 표시
+        }
+    };
+
+    document.getElementById('deleteCookieBtn').addEventListener('click', function() {
+        const isConfirmed = confirm('정말 삭제 하시겠습니까?');
+        if (isConfirmed) {
+            deleteCookie('recentBookIds'); // 쿠키 삭제
+            alert('최근 본 상품들이 삭제 되었어요!');
+            location.reload(); // 페이지 새로고침
+        }
+    });
     // -------------------------
+
     // 책 정보를 동적으로 생성하고, 각 책에 고유 ID를 설정하는 부분에 data-book-id 속성 추가
     function fetchSuggestRandomBooks() {
-        // 책 요소에 클릭 이벤트 리스너 추가하기
-        /**
-        function addClickEventToBooks() {
-            const booksContainer = document.getElementById('sec_today_sug');
-            booksContainer.addEventListener('click', function(event) {
-                // 클릭된 요소에서 가장 가까운 suggestBook div를 찾음
-                const clickedBook = event.target.closest('#suggestBook');
-                if (clickedBook) {
-                    // data-book-id 속성을 사용하여 책의 ID를 가져옴
-                    const bookId = clickedBook.dataset.bookId;
-                    // 책의 ID를 사용하여 info.html 페이지로 이동, 쿼리 파라미터로 bookId를 전달
-                    window.location.href = `info.html?id=${bookId}`;
-                }
-            });
-        }
-        쿠키 생성 한걸로 최근 본 상품에 저장 할려고 아래 코드로 수정 하였음
-        */
-        
         /** 쿠키에 최근 본 책 10개 저장하는 코드 section 끝*/
         function addClickEventToBooks() {
             const booksContainer = document.getElementById('sec_today_sug');
@@ -82,42 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
-        function addRecentBookIdToCookie(bookId) {
-            let recentBookIds = getRecentBookIdsFromCookie();
-            
-            // 최대 10개까지 유지
-            if (recentBookIds.length >= 6) {
-                recentBookIds.pop(); // 가장 오래된 항목 제거
-            }
-            recentBookIds.unshift(bookId); // 새로운 항목을 배열 맨 앞에 추가
-            setCookie('recentBookIds', JSON.stringify(recentBookIds), 7); // 7일 동안 유효
-        }
-        function getRecentBookIdsFromCookie() {
-            const recentBookIdsCookie = getCookie('recentBookIds');
-            if (recentBookIdsCookie) {
-                return JSON.parse(recentBookIdsCookie);
-            } else {
-                return [];
-            }
-        }
-        function displayRecentViewedBooks() {
-            const recentBookIds = getRecentBookIdsFromCookie();
-            const recentViewContainer = document.getElementById('recent_view');
-            // recentViewContainer.innerHTML = '최근 본 상품: ';
-            recentBookIds.forEach((bookId, index) => {
-                if (index > 0) {
-                    recentViewContainer.innerHTML += ', ';
-                }
-                recentViewContainer.innerHTML += bookId;
-            });
-        }
-        
-        // 페이지 로드 시 최근 본 책 ID 목록 표시
-        window.onload = function() {
-            displayRecentViewedBooks();
-        }
-        /** 쿠키에 최근 본 책 10개 저장하는 코드 section 끝 */
-
         // 카테고리 배열에서 랜덤한 요소를 선택하는 함수
         function getRandomElement(arr) {
             const randomIndex = Math.floor(Math.random() * arr.length);
@@ -197,51 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return [];
             }
         }
-        function displayRecentViewedBooks() {
-            const recentBookIds = getRecentBookIdsFromCookie();
-            const recentViewContainer = document.getElementById('recent_view');
-            console.log('쿠키에 저장된 책 목록 bookid: ' + recentBookIds);
-        
-            // 초기 텍스트 설정
-            // recentViewContainer.innerHTML = '최근 본 상품: ';
-            
-            recentBookIds.forEach((bookId) => {
-                // const apiKey = "AIzaSyBQHuGBIi0jR-oH7Yf9KgPSRUcqcULbkHg"
-                // const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}?key=${apiKey}`;
-                const apiUrl = `https://www.googleapis.com/books/v1/volumes/${bookId}`;
-                fetch(apiUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        // const bookTitle = data.volumeInfo.title; // 책 제목
-                        // const bookImage = data.volumeInfo.imageLinks.thumbnail; // 책 이미지 URL
-                        const bookInfo = data.volumeInfo
-        
-                        // 책 이미지와 제목을 상하로 나누어 표시하기 위한 div 요소 생성
-                        const bookDiv = document.createElement('div');
-                        bookDiv.id = 'recent_book';
-                        bookDiv.innerHTML = `
-                            <img src="${bookInfo.imageLinks ? bookInfo.imageLinks.smallThumbnail : '../IMG/Not_FOR_SALE.png'}" alt="${bookInfo.title}">
-                            
-                            <p>${bookInfo.title}</p>
-                        `;
-                        /** 클릭시 info.html로 bookid 보내서 정보 출력하기 */
-                        // 첫 번째 책이 아닌 경우, 구분자 추가
-                        // if (index > 0) {
-                        //     const separator = document.createElement('hr');
-                        //     recentViewContainer.appendChild(separator);
-                        // }
-        
-                        // 생성한 div 요소를 recentViewContainer에 추가
-                        recentViewContainer.appendChild(bookDiv);
-                    })
-                    .catch(error => console.error('Error:', error));
-            });
-        
-        }
-        // 페이지 로드 시 최근 본 책 ID 목록 표시
-        window.onload = function() {
-            displayRecentViewedBooks();
-        }
+        // -------------------------------------------------------------------------------------------------------
         function getRandomElement(arr) {
             const randomIndex = Math.floor(Math.random() * arr.length);
             return arr[randomIndex];

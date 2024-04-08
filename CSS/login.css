@@ -1,6 +1,6 @@
 *{margin : 0;padding : 0;}
 #wrap{
-    border: 3px solid pink;
+    border: 3px solid #303dd7;;
     border-radius: 15px;
     width: 500px;
     margin: 0 auto;
@@ -36,12 +36,14 @@
     height: 4em;
     margin: 0 auto;
     border-style: solid;
-    border-color: pink;
+    border-color: #303dd7;
     box-sizing: border-box;
     outline: none;
 }
-#id{border-radius: 15px 15px 0px 0px; border-width: 1px 1px 0px 1px;}
-#pw{border-radius: 0px 0px 15px 15px; border-width: 1px 1px 1px 1px;}
+#id{border-radius: 15px 15px 0px 0px; border-width: 1px 1px 0px 1px;padding-left: 20px;
+}
+#pw{border-radius: 0px 0px 15px 15px; border-width: 1px 1px 1px 1px;padding-left: 20px;
+}
 
 #btn_login{
     width: 100%;    
@@ -50,7 +52,8 @@
     border-radius: 10px;
     border: none;
 
-    background-color: pink;
+    background-color: #303dd7;
+    color: #fff;
 }
 #btn_login span{
     font-weight: 700;

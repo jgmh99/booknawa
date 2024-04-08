@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/index-main.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+
+    <style>
+        #right_aside {
+            position: -webkit-sticky; /* Safari용 */
+            position: sticky;
+            top: 20px; /* 상단에서 얼마나 떨어져 있을지 지정 */
+        }
+    </style>
 </head>
 <body>
     <Header>
@@ -88,7 +96,7 @@
                 </a>
             </div>
         </Section>
-        <aside>
+        <aside id="right_aside">
             <div id="login_box">
                 <p id="welcome_booknawa">북나와를 더 편리하게 이용하세요</p>
                 <button onclick="login()"><span>Booknawa</span>로그인</button>
@@ -102,6 +110,10 @@
             </div>
             <div id="sec_recent_view">
                 <p class="sec_name">최근 살펴본 상품</p>
+
+                <button id="deleteCookieBtn">전체 지우기</button>
+
+
                 <div id="recent_view" >
                     <!-- 최근 본 상품 -->
                 </div>
@@ -115,39 +127,37 @@
         </aside>
         <div id="results"></div>
     </Main>
-    <hr>
+    <!-- <hr id="hr">
     <footer>
-        <div id="footer_sec_1">
-            <ul>
-                <li><p>※본 사이트는 실제 판매사이트가 아닌 포트폴리오 용 사이트 임 을 알립니다.※</p></li>
-                <li><p>※문제 있는 부분은 즉각 반영하여 삭제 및 조치 하겠습니다.※</p></li>
-                <li><p>※광고에 사용된 이미지는 '교보문고' 와 ''에서 사용하였습니다.※</p></li>
-                <li><p>피드백 주실 곳 : <a href="#">카카오톡</a></p></li>
-            </ul>
-        </div>
-        <div id="footer_sec_2">
-            <p>-Contact-</p>
-            <div class="footer_icon">
-                <a href="">
-                    <img src="./IMG/cart.png" alt="">
-                    <p>오픈채팅</p>
-                </a>
-            </div>
-        </div>
-        <div id="footer_sec_3">
-            <p>-Project Link-</p>
-            <a href="https://github.com/jgmh99/booknawa">Github</a>
-        </div>        
-    </footer>
+        asd
+    </footer> -->
 </body>
 <!-- <script type="module" src="./JS/commonJs/detailCategory.js"></script> -->
 <script src="./JS/index.js"></script>
 <script src="./JS/carousel.js"></script>
 <script src="./JS/header-searchbar.js"></script>
-
 <script>
     function login() {
         window.location.href = './HTML/login.html';
     }
+
+    window.addEventListener('scroll', function() {
+    const aside = document.getElementById('right_aside');
+    const hr = document.getElementById('hr');
+    if (aside && hr) { // 요소가 null이 아닌지 확인
+        const hrPosition = hr.getBoundingClientRect().top + window.pageYOffset;
+        const asideHeight = aside.offsetHeight;
+        
+        if (window.scrollY + asideHeight > hrPosition) {
+            // aside를 hr의 위쪽에 위치시킵니다. 필요에 따라 조정하세요.
+            aside.style.position = 'absolute';
+            aside.style.top = hrPosition - asideHeight + 'px';
+        } else {
+            // 원래대로 스티키 효과를 적용합니다.
+            aside.style.position = 'sticky';
+            aside.style.top = '20px';
+        }
+    }
+});
 </script>
 </html>

@@ -1,96 +1,47 @@
 {
-  "kind": "books#volume",
-  "id": "YrpUDwAAQBAJ",
-  "etag": "ysHL7yvwMo4",
-  "selfLink": "https://www.googleapis.com/books/v1/volumes/YrpUDwAAQBAJ",
-  "volumeInfo": {
-    "title": "파이썬 정복",
-    "subtitle": "파이썬 개발에 필요한 기본 지식을 모두 담은 파이썬 입문서",
-    "authors": [
-      "김상형"
-    ],
-    "publisher": "한빛미디어 ",
-    "publishedDate": "2018-04-13",
-    "description": "\u003cp\u003e\u003cb\u003e&quot;우리 모두 프로그래머가 될 필요는 없지만, \u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e누구나 프로그래밍 언어 하나는 알아야 하는 시대! \u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e'파이썬’을 만나 보세요.&quot;\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e누구나 배울 수 있습니다. \u003c/b\u003e\u003c/p\u003e\u003cp\u003e파이썬은 먼저 배워야 할 선수 과목이 전혀 없어 파이썬을 배우기 위해 별도의 선행 학습이 필요 없습니다. 따라서 누구나 파이썬을 배울 수 있고, 이 책을 읽을 수 있습니다. \u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e프로그래밍을 처음 접하는 독자를 위한 제대로 배우는 파이썬 입문서\u003c/b\u003e\u003c/p\u003e\u003cp\u003e이 책은 프로그래밍을 처음 접하는 독자를 대상으로 한 파이썬 입문서입니다. 프로그래밍에 대한 경험이 전혀 없어도 목차에 따라 문법을 익히고, 실습을 진행하면 파이썬을 쉽게 배울 수 있게 구성했습니다. 물론 다른 언어에 대한 경험이 있다면 더 빠른 속도로 파이썬을 배울 수 있습니다.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e필요한 것은 인터넷이 연결된 컴퓨터 한 대뿐입니다.\u003c/b\u003e\u003c/p\u003e\u003cp\u003e인터넷이 연결된 컴퓨터 한 대만 있다면 바로 이 책으로 파이썬을 배울 수 있습니다. \u003c/p\u003e\u003cp\u003e\u003cb\u003e\u003cbr\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e예제 소스코드 및 독자문의 지원 사이트(http://www.soen.kr/book/\u003cwbr\u003epython)\u003c/b\u003e\u003c/p\u003e\u003cp\u003e이 책의 모든 예제와 실습에 필요한 부속 파일은 위 사이트를 통해 배포합니다. 또한 지면에 미처 싣지 못한 고급 문법과 파이썬 응용에 대한 추가 강좌를 온라인 형식으로 제공하며 출판 후에 발견된 오타의 목록과 수정 방법을 정오표로 제공합니다. \u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e어떤 독자를 위한 책인가? \u003c/b\u003e\u003c/p\u003e\u003cp\u003e- 프로그래밍을 전혀 경험해보지 못한 일반인\u003c/p\u003e\u003cp\u003e- 파이썬을 배워서 현업 업무에 접목시키려는 직장인(경영/기획, 분석, 전략, 통계, 영업/마케팅 등)\u003c/p\u003e\u003cp\u003e- 파이썬(웹 개발, 인공지능 개발 등)으로 할 수 있는 프로그래밍에 관심 있는 사람\u003c/p\u003e",
-    "industryIdentifiers": [
-      {
-        "type": "ISBN_13",
-        "identifier": "9791162249666"
+  "version": "20131101",
+  "logo": "http://image.aladin.co.kr/img/header/2011/aladin_logo_new.gif",
+  "title": "알라딘 검색결과 - 파이썬",
+  "link": "http://www.aladin.co.kr/search/wsearchresult.aspx?KeyTitle=%c6%c4%c0%cc%bd%e3&amp;SearchTarget=book&amp;partner=openAPI",
+  "pubDate": "Sun, 07 Apr 2024 06:11:12 GMT",
+  "totalResults": 1121,
+  "startIndex": 1,
+  "itemsPerPage": 10,
+  "query": "파이썬",
+  "searchCategoryId": 0,
+  "searchCategoryName": "전체",
+  "item": [
+    {
+      "title": "Do it! 일상이 자동화되는 파이썬 생활 프로그래밍 with 챗GPT - 비전공자도 오늘부터 바로 프로그램 만든다!",
+      "link": "http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=332949018&amp;partner=openAPI&amp;start=api",
+      "author": "김창현 (지은이)",
+      "pubDate": "2024-01-30",
+      "description": "만 명이 넘는 독자들을 생활 프로그래밍으로 이끈《Do it! 파이썬 생활 프로그래밍》이 파이썬 최신 문법, 챗GPT 활용법을 반영하여 더 강력하게 돌아왔다. 이 책에서는 가장 쉬운 활용법인 계산기부터 미드 ‘프렌즈’에서 대사 추출, 아파트 실거래가 통계 분석, 포털 사이트 기사 크롤링까지 총 11개 프로그램을 직접 만들어볼 수 있다.",
+      "isbn": "K442938388",
+      "isbn13": "9791163035503",
+      "itemId": 332949018,
+      "priceSales": 21600,
+      "priceStandard": 24000,
+      "mallType": "BOOK",
+      "stockStatus": "",
+      "mileage": 1200,
+      "cover": "https://image.aladin.co.kr/product/33294/90/coversum/k442938388_1.jpg",
+      "categoryId": 6734,
+      "categoryName": "국내도서\u003E컴퓨터/모바일\u003E프로그래밍 언어\u003E파이썬",
+      "publisher": "이지스퍼블리싱",
+      "salesPoint": 2700,
+      "adult": false,
+      "fixedPrice": true,
+      "customerReviewRank": 9,
+      "seriesInfo": {
+        "seriesId": 28311,
+        "seriesLink": "http://www.aladin.co.kr/shop/common/wseriesitem.aspx?SRID=28311&amp;partner=openAPI",
+        "seriesName": "Do it! 시리즈 "
+      },
+      "subInfo": {
+
       }
-    ],
-    "readingModes": {
-      "text": false,
-      "image": true
-    },
-    "pageCount": 508,
-    "printedPageCount": 507,
-    "printType": "BOOK",
-    "categories": [
-      "Computers / Programming Languages / Python",
-      "Computers / Internet / General"
-    ],
-    "maturityRating": "NOT_MATURE",
-    "allowAnonLogging": true,
-    "contentVersion": "1.2.2.0.preview.1",
-    "panelizationSummary": {
-      "containsEpubBubbles": false,
-      "containsImageBubbles": false
-    },
-    "imageLinks": {
-      "smallThumbnail": "http://books.google.com/books/publisher/content?id=YrpUDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE7172UdQiJCctQ7xvW6683jZJc6xglKLaseGsS5oR2cHaEin6Bzh-s-GJpwHLwz5fRkLUD13MjsW0YWZVfMs8nPzOSy1XnvtWFXGMa-RhTiD06e-mvbaI7JDHwjJYXH8cTnyopj6&source=gbs_api",
-      "thumbnail": "http://books.google.com/books/publisher/content?id=YrpUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE7157u70PBOtMBQL2R-Bz1BTsekWrLs9C2a820sBo7ii8Z9uvaDyuNsoitHKbO3trW1qfILe3E9PKJD_ZWPnG09mr9wgQgiTfL7KyNZAhjaSsHlpnCpva7M3DEsUWz_Z02BwAy2S&source=gbs_api",
-      "small": "http://books.google.com/books/publisher/content?id=YrpUDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE737wtknqxpbz9tbWCgB1W39RMNC1J4bMmoWW9bDpGoXuAspTYKWda7CZFIgSMWTqWXcZSmZcOiq1jrOMpV1jiKK2hWYvsDyCCtAb_Pap3g9Efnzme-GFHHPBcrBi9ONkv3V9cyV&source=gbs_api",
-      "medium": "http://books.google.com/books/publisher/content?id=YrpUDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70TAVFJKMylPh6R_20mPyB97PUpvaglQZSkFrsJQ_40Etgk8xl_kEx9wFobUImDY6eOy1bM8QSKQskD9CpUXTRJxK8rvfOHQtN2mo3-oThEymTKWP1t_hL3QpQegqlFhkObVekD&source=gbs_api",
-      "large": "http://books.google.com/books/publisher/content?id=YrpUDwAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72m8Yr5Yds3uUUeHDlAw3-V6oRyC4cNFYfVT6fH_1SwqQqumB78LuGE5BniQpoCkHATkMW_1Rhsp1qU7AMnml1hwNa6P9DVb8ca6uFN2cV8NNe0OGkdwAYoEprCw1xfTmAsLBZ9&source=gbs_api",
-      "extraLarge": "http://books.google.com/books/publisher/content?id=YrpUDwAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE71Tssjb2xb5BfJNBLZd0c8SUBBICE9xpFuttYLG6IbWnQrksomQQM104BjTXCZKjOr6A0cPYauwtLkpBXtsuJ_SV0aCyINNEv65ckyywn8y3xV3BQNPG4wxoqJsu17R6jXelMN5&source=gbs_api"
-    },
-    "language": "ko",
-    "previewLink": "http://books.google.co.kr/books?id=YrpUDwAAQBAJ&hl=&source=gbs_api",
-    "infoLink": "https://play.google.com/store/books/details?id=YrpUDwAAQBAJ&source=gbs_api",
-    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=YrpUDwAAQBAJ"
-  },
-  "saleInfo": {
-    "country": "KR",
-    "saleability": "FOR_SALE",
-    "isEbook": true,
-    "listPrice": {
-      "amount": 17600,
-      "currencyCode": "KRW"
-    },
-    "retailPrice": {
-      "amount": 15840,
-      "currencyCode": "KRW"
-    },
-    "buyLink": "https://play.google.com/store/books/details?id=YrpUDwAAQBAJ&rdid=book-YrpUDwAAQBAJ&rdot=1&source=gbs_api",
-    "offers": [
-      {
-        "finskyOfferType": 1,
-        "listPrice": {
-          "amountInMicros": 17600000000,
-          "currencyCode": "KRW"
-        },
-        "retailPrice": {
-          "amountInMicros": 15840000000,
-          "currencyCode": "KRW"
-        }
-      }
-    ]
-  },
-  "accessInfo": {
-    "country": "KR",
-    "viewability": "PARTIAL",
-    "embeddable": true,
-    "publicDomain": false,
-    "textToSpeechPermission": "ALLOWED",
-    "epub": {
-      "isAvailable": false
-    },
-    "pdf": {
-      "isAvailable": true,
-      "acsTokenLink": "http://books.google.co.kr/books/download/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%A0%95%EB%B3%B5-sample-pdf.acsm?id=YrpUDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-    },
-    "webReaderLink": "http://play.google.com/books/reader?id=YrpUDwAAQBAJ&hl=&source=gbs_api",
-    "accessViewStatus": "SAMPLE",
-    "quoteSharingAllowed": false
-  }
+    }
+    
+  ]
 }

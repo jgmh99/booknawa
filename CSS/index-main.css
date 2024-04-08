@@ -7,6 +7,7 @@ Main{
     /* border: 1px solid green; */
     box-sizing: border-box;
     margin-top: 20px;
+    margin-bottom: 5em;
     display: flex;
     gap: 20px;
 }
@@ -20,7 +21,7 @@ Section{
     /* width: calc(100% - 30%); */
     width: 70%;
     /* border: 1px solid blue; */
-    float: left;
+    /* float: left; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -53,6 +54,8 @@ aside{
     flex-direction: column;
     gap: 20px;
     height: 600px;
+    z-index: 999;
+    /* margin-bottom: 10em; */
 }
 #login_box{
     border: 1px solid #e3e5e8;
@@ -312,16 +315,23 @@ aside{
     width: calc((100% - (20px)) / 2);
     border-radius: 15px;
     overflow: hidden;
-    /* height: 13em; */
+    height: 15em;
     display: flex;
     flex-direction: column;
     border : 1px solid #e3e5e8;
     box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
     margin-bottom: 10px;
+
+    position: relative;
+}
+#recent_book:hover .deleteBookBtn{ 
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
 }
 #recent_book img{
     width: 100%;
-    height: 85%
+    height: 10em;
     /* overflow: hidden; */
 }
 #recent_book p{
@@ -335,4 +345,43 @@ aside{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+}
+.notRecrntViewBook{
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    background-color: #303dd7;
+    border-radius: 10px;
+    color: #fff;
+}
+/* 최근본 책(개별 쿠키) 삭제 */
+.deleteBookBtn{
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    border: 1px solid gray;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 18px;
+}
+/* 최근 본 책 전체 삭제버튼 */
+#deleteCookieBtn{
+    display: none;
+    float: right;
+    margin-right: 20px;
+    border: none;
+    background-color: #303dd7;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#deleteCookieBtn:hover{
+    cursor: pointer;
 }
