@@ -1,0 +1,12 @@
+#goToLogin{
+    margin: 1em 0;
+    text-align: center;
+    
+}
+#goToLogin a{ 
+    text-decoration: none;
+    color: #303dd7;
+}
+#loginform h4{
+    margin: 1em 0;
+}

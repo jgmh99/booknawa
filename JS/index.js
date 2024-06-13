@@ -1,5 +1,8 @@
 // import { detailCategory } from './commonJs/detailCategory.mjs';
+import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
 document.addEventListener('DOMContentLoaded', function() {
+    
     const detailCategory = [
             "Adventure Fiction",
             "Allegorical Novel",
@@ -26,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "Satire",
             "Science Fiction",
     ];
-    
     /** 쿠키생성하고 저장하는 wwwwww */
     function setCookie(name, value, days) {
         var expires = "";
@@ -47,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return null;
     }
-    
     function addRecentBookIdToCookie(bookId) {
         let recentBookIds = getRecentBookIdsFromCookie();
         
@@ -77,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             recentViewContainer.innerHTML = `
                 <div class="notRecrntViewBook">
                     <p>최근에 보신 상품이 없어요!</p>
-                    <p>찾고계신 책을 찾으러 가볼까요??</p>
+                    <p>새로운 책을 찾으러 가볼까요??</p>
                 </div>
             `;
             return; // 함수 종료
@@ -108,14 +109,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     displayRecentViewedBooks();
-    
     // 쿠키에서 특정 책의 ID를 삭제하는 함수
     function deleteBookFromCookie(bookId) {
         let recentBookIds = getRecentBookIdsFromCookie();
         recentBookIds = recentBookIds.filter(id => id !== bookId);
         setCookie('recentBookIds', JSON.stringify(recentBookIds), 7); // 변경된 배열로 쿠키 업데이트
     }
-    
     // 'X' 버튼 클릭 이벤트 처리
     document.addEventListener('click', function(event) {
         if (event.target.className === 'deleteBookBtn') {
@@ -129,15 +128,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    
-    
     /** 쿠키생성하고 저장해서 최근봉 상품에 출력하는 wwww */
 
     // 쿠키 전체 삭제 기능
     function deleteCookie(name) {
         document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;';
     }
-
     window.onload = function() {
         const cookieValue = getCookie('recentBookIds');
         console.log('페이지 로드시 쿠키 확인',cookieValue);
@@ -145,7 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('deleteCookieBtn').style.display = 'inline-block'; // 쿠키가 있을 때만 버튼 표시
         }
     };
-
     document.getElementById('deleteCookieBtn').addEventListener('click', function() {
         const isConfirmed = confirm('정말 삭제 하시겠습니까?');
         if (isConfirmed) {
@@ -154,8 +149,6 @@ document.addEventListener('DOMContentLoaded', function() {
             location.reload(); // 페이지 새로고침
         }
     });
-    // -------------------------
-
     // 책 정보를 동적으로 생성하고, 각 책에 고유 ID를 설정하는 부분에 data-book-id 속성 추가
     function fetchSuggestRandomBooks() {
         /** 쿠키에 최근 본 책 10개 저장하는 코드 section 끝*/
@@ -216,8 +209,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 .catch(error => console.error('Error:', error));
     }
     fetchSuggestRandomBooks(); // 페이지 로드 시 랜덤 책 정보 가져오기 실행
-
-
     /** "publishedDate" 날짜 최근 순으로 뽑기 */
     function fetchPublishedDateRecentBooks() {
         const booksContainer = document.getElementById('sec_pub_rec'); // 여기에서 정의
@@ -233,6 +224,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
+
+        
         function addRecentBookIdToCookie(bookId) {
             let recentBookIds = getRecentBookIdsFromCookie();
             // 최대 10개까지 유지
@@ -287,5 +280,78 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error:', error));
     }
     fetchPublishedDateRecentBooks();
-    
+    /** 로그인 하면 login_box 바뀌게 */
+    // 파이어베이스 로그인 로그아웃 상태 확인용
+    const firebaseConfig = {
+        apiKey: "AIzaSyCWKa54Jtzh5xTtKAYoXBxFr8vEfRwFHbQ",
+        authDomain: "booknawa-2ac00.firebaseapp.com",
+        databaseURL: "https://booknawa-2ac00-default-rtdb.firebaseio.com",
+        projectId: "booknawa-2ac00",
+        storageBucket: "booknawa-2ac00.appspot.com",
+        messagingSenderId: "93348426977",
+        appId: "1:93348426977:web:d5469afa3411fb01bcf3a0"
+    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    // 사용자 로그인 상태 감지
+    auth.onAuthStateChanged(function(user) {
+        const loginBox = document.getElementById('login_box');
+        if (user) {
+            // 사용자가 로그인한 상태
+            console.log(`${user.email}로 로그인되었습니다.`);
+            // login_box div의 내용을 비우고, 로그인한 사용자의 이메일로 환영 메시지를 표시
+            const name = user.email;
+            const nameSlice = name.split('@',1);
+
+            loginBox.innerHTML = 
+            `
+                <div id="user_banner">
+                    <div id="username">
+                        <span>${nameSlice}님</span> <span>어서오세요!</span>
+                    </div>
+                    <button id="logoutButton">
+                        <img src="./IMG/logout.png" alt="">
+                    </button>
+                </div>
+                <div id="user_nav">
+                    <div id="wishList">
+                        <img src="./IMG/heart.png" alt="">
+                        <span>찜</span>
+                    </div>
+                    <div id="order">
+                        <span>주문내역</span>
+                    </div>
+                    <div id="myInfo">
+                        <span>내 정보</span>
+                    </div>
+                </div>
+            `;
+
+            // 로그아웃 버튼에 대한 이벤트 리스너 추가는 로그인 상태 확인 후에 실행해야 함
+            document.getElementById('logoutButton').addEventListener('click', () => {
+                signOut(auth).then(() => {
+                    console.log('로그아웃 성공');
+                    localStorage.removeItem('userEmail');
+                    window.location.href = 'index.html';
+                }).catch((error) => {
+                    console.error('로그아웃 실패', error);
+                });
+            });
+        } else {
+            // 사용자가 로그아웃한 상태
+            console.log('로그인되어 있지 않습니다.');
+            // 로그아웃 상태일 때, login_box의 원래 내용을 복구하거나, 다른 메시지를 표시
+            loginBox.innerHTML = `
+                <p id="welcome_booknawa">북나와를 더 편리하게 이용하세요</p>
+                <button id="loginBtn" onclick="login()"><span>Booknawa</span>로그인</button>
+                <div id="join_booknawa">
+                    <a href="#"><p>아이디 찾기</p></a>
+                    <p> | </p>
+                    <a href="#"><p>비밀번호 찾기</p></a>
+                    <p> | </p>
+                    <a href="#"><p>회원가입</p></a>
+                </div>
+            `;
+        }
+    });
 });

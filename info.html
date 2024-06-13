@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./CSS/common.css">
     <!-- 헤더 CSS -->
     <link rel="stylesheet" href="./CSS/header.css">
+    <!-- info CSS -->
+    <link rel="stylesheet" href="./CSS/info.css">
+<!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
 </head>
 <body>
     <Header>
@@ -38,11 +43,17 @@
             </nav>
         </div>
     </Header>
-    <Main style="border: 1px solid;">
+    <Main>
         <div id="results">
             <!-- 데이터들어옴 -->
         </div>
+        
+        
+        <div id="book_info"></div>
+        <div id="book_index"></div>
+        
     </Main>
+    
 </body>
-<script src="./JS/info.js"></script>
+<script type="module" src="./JS/info.js"></script>
 </html>

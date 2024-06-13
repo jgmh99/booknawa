@@ -31,7 +31,10 @@
     flex-direction: column;
     padding-top: 30px;
 }
-#id,#pw{
+#signInEmail, 
+#signInPassword,
+#signUpEmail, 
+#signUpPassword{
     width: 100%;    
     height: 4em;
     margin: 0 auto;
@@ -40,12 +43,12 @@
     box-sizing: border-box;
     outline: none;
 }
-#id{border-radius: 15px 15px 0px 0px; border-width: 1px 1px 0px 1px;padding-left: 20px;
+#signInEmail, #signUpEmail{border-radius: 15px 15px 0px 0px; border-width: 1px 1px 0px 1px;padding-left: 20px;
 }
-#pw{border-radius: 0px 0px 15px 15px; border-width: 1px 1px 1px 1px;padding-left: 20px;
+#signInPassword, #signUpPassword{border-radius: 0px 0px 15px 15px; border-width: 1px 1px 1px 1px;padding-left: 20px;
 }
 
-#btn_login{
+#signInButton, #signUpButton{
     width: 100%;    
     height: 4em;
     margin-top: 20px;
@@ -54,8 +57,12 @@
 
     background-color: #303dd7;
     color: #fff;
+
+    cursor: pointer;
 }
-#btn_login span{
+#signInButton span,
+#signUpButton span
+{
     font-weight: 700;
     font-size: 16px;
 }

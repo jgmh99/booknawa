@@ -21,16 +21,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/common.css">
     <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/index-main.css">
-    <link rel="stylesheet" href="../CSS/footer.css">
 
-    <style>
-        #right_aside {
-            position: -webkit-sticky; /* Safari용 */
-            position: sticky;
-            top: 20px; /* 상단에서 얼마나 떨어져 있을지 지정 */
-        }
-    </style>
 </head>
 <body>
     <Header>
@@ -40,8 +33,8 @@
             </a>
             <nav>
                 <ul>
-                    <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="장바구니"></a></li>
-                    <li id="cart"><a href="#"><img src="./IMG/cart.png" alt="찜"></a></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             </nav>
         </div>
@@ -98,7 +91,8 @@
         </Section>
         <aside id="right_aside">
             <div id="login_box">
-                <p id="welcome_booknawa">북나와를 더 편리하게 이용하세요</p>
+                
+                <!-- <p id="welcome_booknawa">북나와를 더 편리하게 이용하세요</p>
                 <button onclick="login()"><span>Booknawa</span>로그인</button>
                 <div id="join_booknawa">
                     <a href="#"><p>아이디 찾기</p></a>
@@ -106,7 +100,7 @@
                     <a href="#"><p>비밀번호 찾기</p></a>
                     <p> | </p>
                     <a href="#"><p>회원가입</p></a>
-                </div>
+                </div> -->
             </div>
             <div id="sec_recent_view">
                 <p class="sec_name">최근 살펴본 상품</p>
@@ -127,37 +121,22 @@
         </aside>
         <div id="results"></div>
     </Main>
-    <!-- <hr id="hr">
+    <hr id="hr">
     <footer>
-        asd
-    </footer> -->
+        <p>안녕하세요 본 사이트는 연습용으로 만들고 있는 페이지 입니다!</p>
+        <p>Google Books API를 이용해서 도서 검색 기능을 만들었습니다.</p>
+        <p>회원가입 기능은 있지만 추가 적인 기능은 제작중입니다.</p>
+        <p>감사합니다.</p>
+    </footer>
 </body>
 <!-- <script type="module" src="./JS/commonJs/detailCategory.js"></script> -->
-<script src="./JS/index.js"></script>
+<script type="module" src="./JS/index.js"></script>
+<!-- <script type="module" src="./JS/header.js"></script> -->
 <script src="./JS/carousel.js"></script>
 <script src="./JS/header-searchbar.js"></script>
 <script>
     function login() {
         window.location.href = './HTML/login.html';
     }
-
-    window.addEventListener('scroll', function() {
-    const aside = document.getElementById('right_aside');
-    const hr = document.getElementById('hr');
-    if (aside && hr) { // 요소가 null이 아닌지 확인
-        const hrPosition = hr.getBoundingClientRect().top + window.pageYOffset;
-        const asideHeight = aside.offsetHeight;
-        
-        if (window.scrollY + asideHeight > hrPosition) {
-            // aside를 hr의 위쪽에 위치시킵니다. 필요에 따라 조정하세요.
-            aside.style.position = 'absolute';
-            aside.style.top = hrPosition - asideHeight + 'px';
-        } else {
-            // 원래대로 스티키 효과를 적용합니다.
-            aside.style.position = 'sticky';
-            aside.style.top = '20px';
-        }
-    }
-});
 </script>
 </html>

@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/join.css">
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
+    <div id="wrap">
+        <div id="logo">
+            <img src="../IMG/Booknawa.png" alt="">
+        </div>
+        <div id="login_form">
+            <form action="" id="loginform">
+                <h4>회원가입</h4>
+                <input type="email" id="signUpEmail" placeholder="사용하실 이메일을 적어주세요">
+                <input type="password" id="signUpPassword" placeholder="비밀번호">
+                <button type="submit" id="signUpButton">회원가입</button>
+            </form>
+            <div id="goToLogin">
+                <p>이미 회원이신가요? <span><a href="./login.html">로그인하러가기</a></span></p>
+            </div>
+            
+        </div>
+    </div>
     
+    
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+        //import { firebaseConfig } from "../config/config.js"//추후 파이어베이스 키 외부 연결용
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyCWKa54Jtzh5xTtKAYoXBxFr8vEfRwFHbQ",
+          authDomain: "booknawa-2ac00.firebaseapp.com",
+          databaseURL: "https://booknawa-2ac00-default-rtdb.firebaseio.com",
+          projectId: "booknawa-2ac00",
+          storageBucket: "booknawa-2ac00.appspot.com",
+          messagingSenderId: "93348426977",
+          appId: "1:93348426977:web:d5469afa3411fb01bcf3a0"
+        };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+
+        //회원가입
+        document.getElementById('signUpButton').addEventListener('click', (event)=>{
+            event.preventDefault();
+            const signUpEmail = document.getElementById('signUpEmail').value;
+            const signUpPassword = document.getElementById('signUpPassword').value;
+
+            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+                .then((userCredential) => {
+                    // console.log(userCredential);
+                    // Signed in 
+                    const user = userCredential.user;
+                    // ...
+                })
+                .catch((error) => {
+                    console.log('error');
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                });
+        });
+    </script>
 </body>
 </html>
