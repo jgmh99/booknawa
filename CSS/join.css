@@ -7,6 +7,13 @@
     text-decoration: none;
     color: #303dd7;
 }
-#loginform h4{
-    margin: 1em 0;
+#loginform p{
+    text-align: center;
+    /* margin-bottom: 10px 0; */
+    padding: 10px 0;
+    font-family: "Borel", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    /* vertical-align: middle; */
 }

@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
-// import { firebaseConfig } from "../config/config.js"//추후 파이어베이스 키 외부 연결용
+// import { config, firebaseConfig } from "../config/config.js"//추후 파이어베이스 키 외부 연결용
 
 const firebaseConfig = {
     apiKey: "AIzaSyCWKa54Jtzh5xTtKAYoXBxFr8vEfRwFHbQ",
@@ -14,23 +14,68 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
-//로그인
-document.getElementById('signInButton').addEventListener('click', (event)=>{
-    event.preventDefault();
+
+
+//입력값 검사
+
+// if(signInEmail == null){
+//     errMsg.innerHTML = '<p><span>아이디</span>를 입력해주세요</p>';
+// }
+
+//로그인버튼 눌렀을때 
+// document.getElementById('signInButton').addEventListener('click', (e)=>{
+//     e.preventDefault();
+//     const errMsg = document.querySelector('#errMsg');
+//     const signInEmail = document.getElementById('signInEmail').value;
+//     const signInPassword = document.getElementById('signInPassword').value;
+    
+
+//     signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+//         .then((userCredential) => {
+//             // 로그인 성공
+//             const user = userCredential.user;
+//             // 사용자 이메일 localStorage에 저장
+//             localStorage.setItem('userEmail', user.email);
+//             console.log(user);
+//             window.location.href = '/';
+//         })
+//         .catch((error) => {
+            
+//             errMsg.innerHTML = '<p><span>아이디</span> 나 <span>비밀번호</span>를 확인해주세요</p>';
+//             errMsg.style.display = 'block';
+//         });
+// });
+document.getElementById('signInButton').addEventListener('click', (e) => {
+    e.preventDefault();
+    const errMsg = document.querySelector('#errMsg');
     const signInEmail = document.getElementById('signInEmail').value;
     const signInPassword = document.getElementById('signInPassword').value;
-
+  
+    // 이메일이 입력되지 않은 경우
+    if (!signInEmail) {
+        errMsg.innerHTML = '<p><span>이메일을</span> 입력해주세요</p>';
+        errMsg.style.display = 'block';
+        return;
+    }
+    else if(!signInPassword){
+        errMsg.innerHTML = '<p><span>비밀번호를</span> 입력해주세요</p>';
+        errMsg.style.display = 'block';
+        return;
+    }
+  
+    // 이메일과 비밀번호가 모두 입력된 경우
     signInWithEmailAndPassword(auth, signInEmail, signInPassword)
-        .then((userCredential) => {
-            // 로그인 성공
-            const user = userCredential.user;
-            // 사용자 이메일 localStorage에 저장
-            localStorage.setItem('userEmail', user.email);
-            console.log(user);
-            window.location.href = '/';
-        })
-        .catch((error) => {
-            console.log('로그인 실패');
-            console.error(error.code, error.message);
-        });
-});
+      .then((userCredential) => {
+        // 로그인 성공
+        const user = userCredential.user;
+        // 사용자 이메일 localStorage에 저장
+        localStorage.setItem('userEmail', user.email);
+        console.log(user);
+        window.location.href = '/';
+      })
+      .catch((error) => {
+        errMsg.innerHTML = '<p><span>아이디</span> 나 <span>비밀번호</span>를 확인해주세요</p>';
+        errMsg.style.display = 'block';
+      });
+  });
+  

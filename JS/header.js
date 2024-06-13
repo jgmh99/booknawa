@@ -1,5 +1,6 @@
 import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const userEmail = localStorage.getItem('userEmail');
     if (userEmail) {
